@@ -17,6 +17,7 @@ const Interview = () => {
 
     const [interviewData, setInterviewData] = useState();
     const [userName, setUserName] = useState() 
+    const [userEmail, setUserEmail] = useState() //state to store the user email
     const[loading,setLoading]= useState(false) //loading state to show the loading spinner
     const {interviewInfo,setInterviewInfo} = useContext(InterviewDataContext) //using the context to get the interview data, this component is wrapped in intervieInfo provider,(in layout)
     const router = useRouter();
@@ -54,6 +55,7 @@ const Interview = () => {
 
         setInterviewInfo({
             userName: userName,
+            userEmail: userEmail,
             interviewData:Interviews[0]  
         }) //set the interview data to the context
         router.push('/interview/'+interview_id+'/start') //push the user to the video page
@@ -73,6 +75,11 @@ const Interview = () => {
             <div className='w-full'>
                 <h2>Enter your full name:</h2>
                 <Input placeholder="eg. Rahul " onChange={(event)=>setUserName(event.target.value)}></Input>
+            </div>
+
+            <div className='w-full'>
+                <h2>Enter your Email:</h2>
+                <Input placeholder="eg. rahul@gmail.com" onChange={(event)=>setUserEmail(event.target.value)}></Input>
             </div>
 
             <div className='bg-blue-100 p-5 mt-5  rounded-xl flex gap-4'>
