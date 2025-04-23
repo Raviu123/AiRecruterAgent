@@ -52,7 +52,10 @@ const Interview = () => {
         .eq('interview_id', interview_id)
 
 
-        setInterviewInfo(Interviews[0]) //set the interview data to the context
+        setInterviewInfo({
+            userName: userName,
+            interviewData:Interviews[0]  
+        }) //set the interview data to the context
         router.push('/interview/'+interview_id+'/start') //push the user to the video page
         setLoading(false)
 
