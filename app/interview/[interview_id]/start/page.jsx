@@ -1,47 +1,114 @@
 "use client"
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState, useEffect, useRef } from 'react'
 import InterviewDataContext from '@/context/interviewDataContext'
-import { Timer, Mic, Phone, Volume2 } from 'lucide-react'
+import { Timer, Mic, Phone, Volume2, Loader2 } from 'lucide-react'
 import Image from 'next/image'
 import Vapi from "@vapi-ai/web"
 import AlertConfiirmation from './_components/AlertConfiirmation'
 import axios from 'axios'
 import { supabase } from '@/services/supabaseClient'
-import { useParams } from 'next/navigation'
-import { useRouter } from 'next/navigation'
-import { toast } from 'sonner' // Add this import for toast
+import { useParams, useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 
 const StartInterview = () => {
   
   const { interviewInfo, setInterviewInfo } = useContext(InterviewDataContext)
   const [activeUser, setActiveUser] = useState(false)
-  const [conversation, setConversation] = useState()
-  const [volume, setVolume] = useState(100) // Add volume state
-  const [isCallActive, setIsCallActive] = useState(false) // Track call status
+  const [conversation, setConversation] = useState(null)
+  const [volume, setVolume] = useState(100)
+  const [isCallActive, setIsCallActive] = useState(false)
+  const [isEnding, setIsEnding] = useState(false)
+  const [isFeedbackGenerating, setIsFeedbackGenerating] = useState(false)
   const { interview_id } = useParams()
   const router = useRouter()
-
-  const vapi = new Vapi(process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY)
+  
+  // Use ref to maintain stable reference to vapi instance
+  const vapiRef = useRef(null)
+  
+  // Initialize Vapi once
+  useEffect(() => {
+    if (!vapiRef.current) {
+      vapiRef.current = new Vapi(process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY)
+    }
+    
+    // Clean up function
+    return () => {
+      if (vapiRef.current) {
+        try {
+          if (isCallActive) {
+            vapiRef.current.stop()
+          }
+          vapiRef.current.removeAllListeners()
+        } catch (error) {
+          console.error('Error during cleanup:', error)
+        }
+      }
+    }
+  }, [])
 
   useEffect(() => {
-    interviewInfo && startCall()
-    
-    // Add cleanup function to ensure call ends when component unmounts
-    return () => {
-      if (isCallActive) {
-        vapi.stop()
-      }
+    if (interviewInfo && vapiRef.current) {
+      setupEventListeners()
+      startCall()
     }
   }, [interviewInfo])
 
-  // Add volume change handler
+  // Set up event listeners
+  const setupEventListeners = () => {
+    if (!vapiRef.current) return
+    
+    vapiRef.current.on("call-start", () => {
+      console.log("Call has started.")
+      toast.success("Call Connected...")
+      setIsCallActive(true)
+    })
+    
+    vapiRef.current.on("speech-start", () => {
+      console.log("Assistant speech has started.")
+      setActiveUser(false)
+    })
+    
+    vapiRef.current.on("speech-end", () => {
+      console.log("Assistant speech has ended.")
+      setActiveUser(true)
+    })
+    
+    vapiRef.current.on("call-end", () => {
+      console.log("Call has ended.")
+      toast.success('Interview Ended')
+      setIsCallActive(false)
+      
+      // Instead of using a timeout that could race with other triggers
+      if (!isFeedbackGenerating) {
+        setIsFeedbackGenerating(true) // Set the flag immediately
+        generateFeedback()
+      }
+    })
+    
+    // Various assistant messages can come back (like function calls, transcripts, etc)
+    vapiRef.current.on("message", (message) => {
+      if (message?.conversation) {
+        console.log("Received conversation update")
+        setConversation(message.conversation)
+      }
+    })
+
+    vapiRef.current.on("error", (error) => {
+      console.log("Vapi error:", error)
+      toast.error("Error during interview session")
+      setIsCallActive(false)
+      setIsEnding(false)
+    })
+  }
+
+  // Handle volume change
   const handleVolumeChange = (e) => {
-    const newVolume = e.target.value
+    const newVolume = parseInt(e.target.value, 10)
     setVolume(newVolume)
     
     // Set audio volume for Vapi if it has this capability
-    if (vapi.setVolume) {
-      vapi.setVolume(newVolume / 100)
+    if (vapiRef.current?.setVolume) {
+      vapiRef.current.setVolume(newVolume / 100)
     }
     
     // Also set volume for any audio elements on the page
@@ -52,9 +119,11 @@ const StartInterview = () => {
   }
 
   const startCall = () => {
+    if (!vapiRef.current || !interviewInfo) return
+    
     let questionList = ""
-    if (interviewInfo) {
-      interviewInfo?.interviewData?.questionList.forEach((item) => {
+    if (interviewInfo?.interviewData?.questionList) {
+      interviewInfo.interviewData.questionList.forEach((item) => {
         questionList = item?.question + ', ' + questionList
       })
     }
@@ -106,7 +175,7 @@ Key Guidelines:
     }
   
     try {
-      vapi.start(assistantOptions)
+      vapiRef.current.start(assistantOptions)
       setIsCallActive(true)
       console.log('Interview started')
     } catch (error) {
@@ -115,99 +184,115 @@ Key Guidelines:
     }
   }
 
-  const stopInterview = () => {
-    if (isCallActive) {
+  const stopInterview = async () => {
+    // Prevent multiple stop attempts or feedback generation attempts
+    if (isEnding || isFeedbackGenerating) return
+    
+    setIsEnding(true)
+    toast.loading("Ending interview...", { id: "ending-interview" })
+    
+    if (vapiRef.current && isCallActive) {
       try {
-        vapi.stop()
+        // Set feedback generating flag BEFORE stopping the call
+        // to prevent race conditions with the call-end event
+        setIsFeedbackGenerating(true)
+        
+        // Force the interview to end
+        await vapiRef.current.stop()
         setIsCallActive(false)
-        toast.success('Interview stopped')
-        // Only generate feedback if we have conversation data
-        if (conversation) {
-          generateFeedback()
-        } else {
-          toast.error('No conversation data available for feedback')
-          router.replace('/interview/' + interview_id + '/completed')
-        }
+        toast.success('Interview stopped', { id: "ending-interview" })
+        
+        // The call-end event will NOT trigger generateFeedback again
+        // because isFeedbackGenerating is already true
+        // Call it directly here
+        generateFeedback()
       } catch (error) {
         console.error('Error stopping interview:', error)
-        toast.error('Error stopping interview')
+        toast.error('Error stopping interview', { id: "ending-interview" })
+        setIsEnding(false)
+        setIsFeedbackGenerating(false) // Reset the flag on error
       }
+    } else {
+      toast.error('Interview is not active', { id: "ending-interview" })
+      setIsEnding(false)
     }
   }
 
-  // Set up event listeners
-  useEffect(() => {
-    const setupEventListeners = () => {
-      vapi.on("call-start", () => {
-        console.log("Call has started.")
-        toast.success("Call Connected...")
-        setIsCallActive(true)
-      })
-      
-      vapi.on("speech-start", () => {
-        console.log("Assistant speech has started.")
-        setActiveUser(false)
-      })
-      
-      vapi.on("speech-end", () => {
-        console.log("Assistant speech has ended.")
-        setActiveUser(true)
-      })
-      
-      vapi.on("call-end", () => {
-        console.log("Call has ended.")
-        toast.success('Interview Ended')
-        setIsCallActive(false)
-        if (conversation) {
-          generateFeedback()
-        }
-      })
-      
-      // Various assistant messages can come back (like function calls, transcripts, etc)
-      vapi.on("message", (message) => {
-        console.log(message?.conversation)
-        setConversation(message?.conversation)
-      })
-
-      vapi.on("error", (error) => {
-        console.error("Vapi error:", error)
-        toast.error("Error during interview session")
-        setIsCallActive(false)
-      })
-    }
-
-    setupEventListeners()
-    
-    // Clean up event listeners when component unmounts
-    return () => {
-      vapi.removeAllListeners()
-    }
-  }, [])
-
   const generateFeedback = async () => {
+    // This is a safety check, but with the changes above, this should never happen
+    if (isFeedbackGenerating && document.getElementById('feedback-in-progress')) {
+      console.log("Feedback generation already in progress")
+      return
+    }
+    
+    // Create a hidden marker to prevent race conditions
+    const marker = document.createElement('div')
+    marker.id = 'feedback-in-progress'
+    marker.style.display = 'none'
+    document.body.appendChild(marker)
+    
     try {
-      const result = await axios.post('/api/ai-feedback', {
-        conversation: conversation
+      // Show loading toast with longer duration
+      toast.loading("Generating interview feedback... Please wait", { 
+        id: "generating-feedback",
+        duration: 60000 // 60 seconds (much longer than default)
       })
   
-      console.log(result?.data)
-      const content = result.data.content
-      const finalContent = content.replace('```json','').replace('```','')
-  
-      console.log(finalContent)
+      // Always proceed with whatever conversation data we have
+      const conversationData = conversation || { messages: [] }
+      console.log("Starting feedback generation with conversation data:", conversationData)
       
-      // Parse JSON properly
+      // 1. Get feedback from API
+      const result = await axios.post('/api/ai-feedback', {
+        conversation: conversationData
+      })
+  
+      console.log("API Response:", result?.data)
+      
+      if (!result?.data?.content) {
+        throw new Error("Invalid feedback response from API")
+      }
+      
+      const content = result.data.content
+      const finalContent = content.replace(/```json|```/g, '').trim()
+  
+      console.log("Parsed content:", finalContent)
+      
+      // 2. Parse JSON
       let parsedFeedback
       try {
         parsedFeedback = JSON.parse(finalContent)
       } catch (error) {
-        console.error("Error parsing feedback JSON:", error)
-        toast.error("Error processing interview feedback")
-        router.replace('/interview/' + interview_id + '/completed')
+        console.error("Error parsing feedback JSON:", error, "Content was:", finalContent)
+        toast.error("Error processing interview feedback", { id: "generating-feedback" })
+        setIsFeedbackGenerating(false)
+        setIsEnding(false)
+        document.body.removeChild(marker)
         return
       }
   
-      // Save to database
+      // 3. Check if feedback already exists for this interview to prevent duplicates
+      const { data: existingData } = await supabase
+        .from('interview-feedback')
+        .select('id')
+        .eq('interview_id', interview_id)
+        .eq('userEmail', interviewInfo?.userEmail)
+        
+      if (existingData && existingData.length > 0) {
+        console.log("Feedback already exists for this interview, skipping save")
+        toast.success("Interview feedback already saved! Redirecting...", { id: "generating-feedback" })
+        
+        // Navigate to completed page
+        setTimeout(() => {
+          setIsFeedbackGenerating(false)
+          setIsEnding(false)
+          document.body.removeChild(marker)
+          router.replace('/interview/' + interview_id + '/completed')
+        }, 2500)
+        return
+      }
+  
+      // 4. Save to database only if no existing feedback
       const { data, error } = await supabase
         .from('interview-feedback')
         .insert([
@@ -223,17 +308,33 @@ Key Guidelines:
       
       if (error) {
         console.error("Error saving feedback to database:", error)
-        toast.error("Failed to save interview feedback")
-      } else {
-        console.log("Data saved to supabase:", data)
-        toast.success("Interview feedback saved")
+        toast.error("Failed to save interview feedback", { id: "generating-feedback" })
+        setIsFeedbackGenerating(false)
+        setIsEnding(false)
+        document.body.removeChild(marker)
+        return
       }
   
-      router.replace('/interview/' + interview_id + '/completed')
+      // 5. Only navigate after successful save
+      console.log("Data saved to supabase:", data)
+      toast.success("Interview feedback saved! Redirecting...", { id: "generating-feedback" })
+      
+      // Add a longer delay before navigation to ensure user sees success message
+      setTimeout(() => {
+        setIsFeedbackGenerating(false)
+        setIsEnding(false)
+        document.body.removeChild(marker)
+        router.replace('/interview/' + interview_id + '/completed')
+      }, 2500)
+  
     } catch (error) {
       console.error("Error in generateFeedback:", error)
-      toast.error("Failed to generate feedback")
-      router.replace('/interview/' + interview_id + '/completed')
+      toast.error("Failed to generate feedback. Please try again.", { id: "generating-feedback" })
+      setIsFeedbackGenerating(false)
+      setIsEnding(false)
+      if (marker && marker.parentNode) {
+        document.body.removeChild(marker)
+      }
     }
   }
 
@@ -292,13 +393,27 @@ Key Guidelines:
       <div className='flex items-center justify-center gap-5 mt-4'>
         <Mic className={`text-white h-10 w-10 p-3 ${activeUser ? 'bg-green-500' : 'bg-gray-500'} cursor-pointer rounded-full`} />
         
-        <AlertConfiirmation stopInterview={stopInterview}>
-          <Phone className='text-white h-10 w-10 p-3 bg-red-500 cursor-pointer rounded-full' />
-        </AlertConfiirmation>
+        {(isEnding || isFeedbackGenerating) ? (
+          <div className='text-white h-10 w-10 p-2 bg-gray-500 rounded-full flex items-center justify-center'>
+            <Loader2 className='animate-spin' size={20} />
+          </div>
+        ) : (
+          <AlertConfiirmation stopInterview={stopInterview} disabled={isEnding || isFeedbackGenerating}>
+            <Phone className='text-white h-10 w-10 p-3 bg-red-500 cursor-pointer rounded-full' />
+          </AlertConfiirmation>
+        )}
       </div>
       
       <h2 className='text-sm text-gray-400 text-center mt-5'>
-        {isCallActive ? 'Interview in Progress....' : 'Interview not active'}
+        {isEnding ? 'Ending interview...' : 
+         isFeedbackGenerating ? (
+           <div className="flex items-center justify-center gap-2">
+             <span>Generating feedback, please wait</span>
+             <Loader2 className="animate-spin" size={16} />
+           </div>
+         ) : 
+         isCallActive ? 'Interview in Progress....' : 
+         'Interview not active'}
       </h2>
     </div>
   )
