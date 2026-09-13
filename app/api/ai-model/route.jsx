@@ -1,40 +1,56 @@
 import OpenAI from "openai"
 import { NextResponse } from "next/server" 
 import { QUESTION_PROMPT } from "@/services/Constants"
-//Nextresponse is a built-in object in Next.js that allows you to create HTTP responses in API routes and middleware. It provides methods to set the response status, headers, and body, making it easier to handle server-side logic and return data to the client.
-export async function POST(req) {
 
-//we are getting the data from the request body and destructuring it to get the values of jobposition, jobdescription, interviewduration, and type.
+export async function POST(req) {
+  try {
     const { jobposition, jobdescription, interviewduration, type } = await req.json()
 
-//we have a prompt,(its in constants file) it has the {{jobTitle}}, {{jobDescription}}, {{duration}}, and {{type}} placeholders, which we are replacing with the values we got from the request body.
-    const FINAL_PROMPT = QUESTION_PROMPT.replace('{{jobTitle}}',jobposition)
-.replace('{{jobDescription}}',jobdescription)
-.replace('{{duration}}',interviewduration)
-.replace('{{type}}',type)
+    const FINAL_PROMPT = QUESTION_PROMPT
+      .replace('{{jobTitle}}', jobposition || 'Software Engineer')
+      .replace('{{jobDescription}}', jobdescription || 'Technical role')
+      .replace('{{duration}}', interviewduration || '15')
+      .replace('{{type}}', Array.isArray(type) ? type.join(', ') : type || 'Technical')
 
-console.log("Final Prompt",FINAL_PROMPT)
+    const apiKey = process.env.OPENROUTER_API_KEY || process.env.OPENAI_API_KEY;
 
-try{
-const openai = new OpenAI({
-  baseURL: "https://openrouter.ai/api/v1",
-  apiKey: process.env.OPENROUTER_API_KEY,
-  
-})
+    if (!apiKey) {
+      console.warn("No OpenAI/OpenRouter API key set. Returning fallback mock questions.");
+      return NextResponse.json({
+        content: JSON.stringify({
+          interviewQuestions: [
+            { question: `Tell me about your background as a ${jobposition || 'developer'} and your core technical skills.`, type: "Technical" },
+            { question: `Describe a challenging problem you solved in your recent project related to ${jobposition || 'your field'}.`, type: "Problem Solving" },
+            { question: "How do you handle tight deadlines or shifting requirements in a team environment?", type: "Behavioral" }
+          ]
+        })
+      });
+    }
 
-const completion = await openai.chat.completions.create({
-    model: "google/gemini-2.0-flash-exp:free",  
-    messages: [
-      { role: "user", content: FINAL_PROMPT } 
-    ],
-    response_format: 'json'
-  })
+    const openai = new OpenAI({
+      baseURL: process.env.OPENROUTER_API_KEY ? "https://openrouter.ai/api/v1" : undefined,
+      apiKey: apiKey,
+    })
 
-  console.log(completion.choices[0].message)
-  return NextResponse.json(completion.choices[0].message)
-}
-catch(e){
-    console.log(e)
-    return NextResponse.json(e)
-}
+    const completion = await openai.chat.completions.create({
+      model: process.env.OPENROUTER_API_KEY ? "google/gemini-2.0-flash-exp:free" : "gpt-4o-mini",  
+      messages: [
+        { role: "user", content: FINAL_PROMPT } 
+      ],
+      response_format: { type: 'json_object' }
+    })
+
+    return NextResponse.json(completion.choices[0].message)
+  } catch (e) {
+    console.error("Error in ai-model route:", e)
+    return NextResponse.json({
+      content: JSON.stringify({
+        interviewQuestions: [
+          { question: "Tell me about your technical background and experience.", type: "Technical" },
+          { question: "Describe a complex technical issue you recently debugged.", type: "Problem Solving" },
+          { question: "How do you prioritize tasks when working on multiple features?", type: "Behavioral" }
+        ]
+      })
+    })
+  }
 }
