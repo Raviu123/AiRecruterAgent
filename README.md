@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Interview Preparation Platform
 
-## Getting Started
+Next.js frontend + FastAPI backend + Supabase, kept as two independent apps.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+AiRecruterAgent/
+├── frontend/                  # Next.js 15 app (UI only)
+│   ├── app/                   # App Router pages
+│   ├── components/            # UI primitives (shadcn / Radix)
+│   ├── context/, hooks/, lib/, types/
+│   ├── modules/               # Feature services that call the backend
+│   ├── services/              # apiClient.js, authService.js, supabaseClient.js (session only), Constants.jsx
+│   ├── public/
+│   └── package.json, next.config.mjs, .env.example
+├── backend/                   # FastAPI app (all API, AI and database logic)
+│   ├── app/main.py            # FastAPI app, CORS, error handling
+│   ├── app/config.py          # Settings (reads backend/.env)
+│   ├── app/database.py        # Supabase repository — every table read/write
+│   ├── app/auth.py            # Verifies the Supabase access token sent by the browser
+│   ├── app/llm.py             # OpenRouter / OpenAI client
+│   ├── app/prompts.py         # Question, feedback and voice-interviewer prompts
+│   ├── app/services/          # Question generation, feedback grading, Vapi assistant config
+│   ├── app/routers/           # /api/auth, /api/users, /api/interviews, /api/analytics, /api/aptitude
+│   ├── tests/
+│   └── requirements.txt, .env.example
+└── AGENTS.md, CONVENTIONS.md, GOAL_AND_DIRECTION.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sign-up and sign-in (email + password) go through the backend, which calls Supabase Auth; the browser only stores the
+returned session. The browser talks to Vapi directly for the live voice call. Everything else goes through the backend too.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run the backend and frontend in two terminals.
 
-## Learn More
+### 1. Backend (http://localhost:8000)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+copy .env.example .env          # macOS/Linux: cp .env.example .env — then fill in values
+uvicorn app.main:app --reload --port 8000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API docs: http://localhost:8000/docs · Tests: `pytest`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+On startup the backend logs a dependency check (`OK` / `WARN` / `FAIL`) for the Supabase database
+tables, Supabase auth, and the AI provider key, plus the Vapi and CORS settings. The server still starts
+if a check fails. The same report is available at http://localhost:8000/api/health; add `?refresh=true` to re-run it.
 
-## Deploy on Vercel
+| Variable (`backend/.env`) | Purpose |
+| --- | --- |
+| `SUPABASE_URL` | Supabase project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` (recommended) or `SUPABASE_ANON_KEY` | Database access |
+| `OPENROUTER_API_KEY` or `OPENAI_API_KEY` | Question generation and feedback grading |
+| `FRONTEND_ORIGINS` | CORS origins (default `http://localhost:3000`) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. Frontend (http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+cd frontend
+npm install
+copy .env.example .env          # macOS/Linux: cp .env.example .env — then fill in values
+npm run dev
+```
+
+| Variable (`frontend/.env`) | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_API_URL` | Backend URL (default `http://localhost:8000`) |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Storing/refreshing the login session in the browser |
+| `NEXT_PUBLIC_VAPI_PUBLIC_KEY` | Voice interviews (text mode works without it) |
+| `NEXT_PUBLIC_HOST_URL` | Base URL for shareable interview links |
+
+## Interview flow
+
+1. **Create** (`/mock-interview`, signed in): paste a JD → `POST /api/interviews/generate-questions`
+   → edit questions → `POST /api/interviews` saves to the `Interviews` table.
+2. **Attempt** (`/interview/:id`, public link): enter name → `/interview/:id/start` → choose
+   - **Voice**: browser fetches `GET /api/interviews/:id/assistant-config` and starts a Vapi call; the transcript is collected live.
+   - **Text**: answer each question in writing.
+3. **Feedback**: `POST /api/interviews/:id/feedback` grades the transcript with the LLM and stores it in
+   `interview-feedback`; the report is shown at `/interview/:id/completed?feedback=<id>`.
+
+## API summary
+
+| Method | Path | Auth |
+| --- | --- | --- |
+| POST | `/api/auth/signup` (name, email, password) | public |
+| POST | `/api/auth/login` (email, password) | public |
+| POST | `/api/users/me` | signed in |
+| POST | `/api/interviews/generate-questions` | signed in |
+| POST / GET | `/api/interviews` | signed in (own interviews) |
+| GET | `/api/interviews/{id}` | public |
+| GET | `/api/interviews/{id}/details` | owner |
+| GET | `/api/interviews/{id}/assistant-config` | public |
+| POST | `/api/interviews/{id}/feedback` | public |
+| GET | `/api/interviews/{id}/feedback/{feedback_id}` | public |
+| GET | `/api/analytics/summary` | signed in |
+| GET | `/api/aptitude/questions`, POST `/api/aptitude/attempts` | signed in |
+
+"Signed in" means the request carries `Authorization: Bearer <Supabase access token>`;
+`frontend/services/apiClient.js` attaches it automatically.

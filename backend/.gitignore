@@ -1,0 +1,11 @@
+# virtual environment
+.venv/
+
+# python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# env files (example is committed)
+.env*
+!.env.example
