@@ -5,9 +5,9 @@ import LatestInterviewList from './_components/LatestInterviewList'
 
 const Dashboard = () => {
   return (
-    <div >
-      {/* <WelcomeContainer/> */}
-      <h2 className='my-3 font-bold text-2xl'>Dashboard</h2>
+    <div className='space-y-6'>
+      <WelcomeContainer/>
+      <h2 className='font-bold text-2xl'>Candidate Preparation Hub</h2>
       <CreateOptions></CreateOptions>
       <LatestInterviewList/>
     </div> 

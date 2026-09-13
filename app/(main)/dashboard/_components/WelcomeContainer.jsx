@@ -9,7 +9,7 @@ const WelcomeContainer = () => {
     <div className='ml-9 mr-9 mt-9 flex justify-between bg-white rounded-2xl items-center'>
         <div className=' w-full g-3   p-5'>
             <h2 className='text-lg font-bold'> Welcome back {user?.name}</h2>
-            <h2 className='text-grey-500'>AI Driven Interview , Hassel free Hiring</h2>   
+            <h2 className='text-gray-500'>AI-Powered Interview Preparation & Skill Assessment Platform</h2>   
         </div>
         {user&&<Image src={user?.picture} alt="userpic" width={40} height={40} className='mr-4 rounded-full'></Image>}
     </div>

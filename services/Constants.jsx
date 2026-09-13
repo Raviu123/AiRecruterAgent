@@ -1,15 +1,9 @@
-import { LayoutDashboard } from "lucide-react"
-import { Calendar } from "lucide-react"
-import { List } from "lucide-react"
-import { WalletCards } from "lucide-react"
-import { Settings } from "lucide-react"
+import { LayoutDashboard, Briefcase, Brain, List, Settings } from "lucide-react"
 import {
    Code,
    UserCheck,
    BadgeCheck,
-   Briefcase,
-   Brain,
- } from "lucide-react";
+} from "lucide-react";
 
 export const SidebarOptions = [
     {
@@ -18,26 +12,25 @@ export const SidebarOptions = [
        path:'/dashboard',
     },
     {
-        name: "Schedule Interview",
-        icon: Calendar,
-        path:'/schedule-interview',
+        name: "JD Mock Interview",
+        icon: Briefcase,
+        path:'/mock-interview',
      },
      {
-        name: "All interviews",
+        name: "Aptitude Playground",
+        icon: Brain, 
+        path:'/aptitude',
+     },
+     {
+        name: "Analytics & History",
         icon: List, 
-        path:'/all-interviews',
-     },
-     {
-        name: "Billing",
-        icon: WalletCards, 
-        path:'/billing',
+        path:'/analytics',
      },
      {
         name: "Settings",
         icon: Settings, 
         path:'/settings',
      },
-    
 ]
 
 export const InterviewType = [

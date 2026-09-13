@@ -28,7 +28,9 @@ export function AppSidebar() {
       <Sidebar>
         <SidebarHeader className="flex items-center  mt-5">
             <Image alt={"/"} src={"/logo.png"} width={100} height={100} className="mb-5 w-[200px]"></Image>
-            <Button className="w-[230px]">Create New Interview<Plus/></Button>
+            <Link href="/mock-interview" className="w-[230px]">
+              <Button className="w-full">Start Mock Interview<Plus/></Button>
+            </Link>
         </SidebarHeader>
 
         <SidebarContent>
