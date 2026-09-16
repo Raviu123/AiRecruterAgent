@@ -150,9 +150,30 @@ class FeedbackReport(BaseModel):
         return self.recommendation == RECOMMENDATIONS[0]
 
 
-class AptitudeAttemptRequest(BaseModel):
-    category: str | None = None
-    difficulty: str | None = None
-    score: int = Field(ge=0)
-    totalQuestions: int = Field(gt=0)
-    userAnswers: list[Any] | dict[str, Any] = Field(default_factory=list)
+class StartAptitudeQuizRequest(BaseModel):
+    """Quiz settings chosen in the playground; the paper is drawn from the bank."""
+
+    category: str | None = Field(default=None, max_length=200)
+    topic: str | None = Field(default=None, max_length=200)
+    difficulty: Literal["easy", "medium", "hard", "mixed"] = "mixed"
+    questionCount: int = Field(default=10, ge=1, le=50)
+
+    @field_validator("category", "topic", mode="before")
+    @classmethod
+    def blank_to_none(cls, value: Any) -> Any:
+        if isinstance(value, str):
+            value = value.strip()
+            # "All categories" arrives as an empty string.
+            return value or None
+        return value
+
+
+class AptitudeAnswer(BaseModel):
+    questionId: int
+    # The index of the option as displayed, or None when the question was skipped.
+    selectedIndex: int | None = Field(default=None, ge=0, le=25)
+
+
+class SubmitAptitudeQuizRequest(BaseModel):
+    answers: list[AptitudeAnswer] = Field(default_factory=list, max_length=50)
+    timeTakenSeconds: int = Field(default=0, ge=0, le=86400)

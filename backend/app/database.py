@@ -21,7 +21,11 @@ USERS_TABLE = "Users"
 INTERVIEWS_TABLE = "Interviews"
 FEEDBACK_TABLE = "interview-feedback"
 APTITUDE_QUESTIONS_TABLE = "aptitude_questions"
+APTITUDE_QUIZZES_TABLE = "aptitude_quizzes"
 APTITUDE_ATTEMPTS_TABLE = "aptitude_attempts"
+
+# The bank is a few hundred rows, so a quiz draw pulls the matching slice in one go.
+APTITUDE_BANK_FETCH_LIMIT = 5000
 
 
 @lru_cache
@@ -185,6 +189,50 @@ class Repository:
 
     # ---- Aptitude ---------------------------------------------------------
 
+    def upsert_aptitude_questions(self, rows: list[dict[str, Any]]) -> int:
+        """Insert or update bank rows keyed on `external_id` (used by seed_aptitude.py)."""
+        if not rows:
+            return 0
+        result = (
+            self.client.table(APTITUDE_QUESTIONS_TABLE)
+            .upsert(rows, on_conflict="external_id")
+            .execute()
+        )
+        return len(result.data or [])
+
+    def list_aptitude_bank(
+        self, category: str | None = None, topic: str | None = None, difficulty: str | None = None
+    ) -> list[dict[str, Any]]:
+        """Question rows for a quiz draw, without the answer key or explanations."""
+        query = self.client.table(APTITUDE_QUESTIONS_TABLE).select("id,category,topic,difficulty,options")
+        if category:
+            query = query.eq("category", category)
+        if topic:
+            query = query.eq("topic", topic)
+        if difficulty and difficulty != "mixed":
+            query = query.eq("difficulty", difficulty)
+        return query.limit(APTITUDE_BANK_FETCH_LIMIT).execute().data or []
+
+    def list_aptitude_catalog_rows(self) -> list[dict[str, Any]]:
+        result = (
+            self.client.table(APTITUDE_QUESTIONS_TABLE)
+            .select("id,category,topic,difficulty")
+            .limit(APTITUDE_BANK_FETCH_LIMIT)
+            .execute()
+        )
+        return result.data or []
+
+    def get_aptitude_questions_by_ids(self, question_ids: list[Any]) -> list[dict[str, Any]]:
+        if not question_ids:
+            return []
+        result = (
+            self.client.table(APTITUDE_QUESTIONS_TABLE)
+            .select("*")
+            .in_("id", question_ids)
+            .execute()
+        )
+        return result.data or []
+
     def list_aptitude_questions(
         self, category: str | None, difficulty: str | None, limit: int
     ) -> list[dict[str, Any]]:
@@ -195,14 +243,80 @@ class Repository:
             query = query.eq("difficulty", difficulty)
         return query.limit(limit).execute().data or []
 
+    # ---- Aptitude quizzes -------------------------------------------------
+
+    def create_aptitude_quiz(self, data: dict[str, Any]) -> dict[str, Any]:
+        result = self.client.table(APTITUDE_QUIZZES_TABLE).insert(data).execute()
+        return result.data[0]
+
+    def get_aptitude_quiz(self, quiz_id: str) -> dict[str, Any] | None:
+        result = (
+            self.client.table(APTITUDE_QUIZZES_TABLE)
+            .select("*")
+            .eq("quiz_id", quiz_id)
+            .limit(1)
+            .execute()
+        )
+        return result.data[0] if result.data else None
+
+    def complete_aptitude_quiz(self, quiz_id: str, completed_at: str) -> None:
+        (
+            self.client.table(APTITUDE_QUIZZES_TABLE)
+            .update({"status": "completed", "completed_at": completed_at})
+            .eq("quiz_id", quiz_id)
+            .execute()
+        )
+
+    def list_recent_quiz_papers(
+        self, user_email: str, category: str | None, difficulty: str | None, limit: int
+    ) -> list[dict[str, Any]]:
+        """Recent papers for the same settings, so a fresh draw can avoid repeats."""
+        query = (
+            self.client.table(APTITUDE_QUIZZES_TABLE)
+            .select("questions")
+            .eq("userEmail", user_email)
+        )
+        if category:
+            query = query.eq("category", category)
+        if difficulty:
+            query = query.eq("difficulty", difficulty)
+        return query.order("created_at", desc=True).limit(limit).execute().data or []
+
+    # ---- Aptitude attempts ------------------------------------------------
+
     def create_aptitude_attempt(self, data: dict[str, Any]) -> dict[str, Any]:
         result = self.client.table(APTITUDE_ATTEMPTS_TABLE).insert(data).execute()
         return result.data[0]
 
-    def list_aptitude_attempts(self, user_email: str) -> list[dict[str, Any]]:
+    def get_aptitude_attempt(self, attempt_id: int, user_email: str) -> dict[str, Any] | None:
         result = (
             self.client.table(APTITUDE_ATTEMPTS_TABLE)
             .select("*")
+            .eq("id", attempt_id)
+            .eq("userEmail", user_email)
+            .limit(1)
+            .execute()
+        )
+        return result.data[0] if result.data else None
+
+    def get_attempt_by_quiz(self, quiz_id: str) -> dict[str, Any] | None:
+        result = (
+            self.client.table(APTITUDE_ATTEMPTS_TABLE)
+            .select("*")
+            .eq("quiz_id", quiz_id)
+            .limit(1)
+            .execute()
+        )
+        return result.data[0] if result.data else None
+
+    def list_aptitude_attempts(self, user_email: str) -> list[dict[str, Any]]:
+        """Attempt summaries. The per-question `review` payload is fetched one at a time."""
+        result = (
+            self.client.table(APTITUDE_ATTEMPTS_TABLE)
+            .select(
+                "id,created_at,quiz_id,category,topic,difficulty,score,totalQuestions,"
+                "accuracy,timeTakenSeconds,completed_at"
+            )
             .eq("userEmail", user_email)
             .order("id", desc=True)
             .execute()

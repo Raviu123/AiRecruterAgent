@@ -9,3 +9,6 @@
 *.pem
 .vscode/
 .idea/
+
+# Reference PDFs the question bank was built from (too large for git; the JSON bank is committed)
+data/*.pdf

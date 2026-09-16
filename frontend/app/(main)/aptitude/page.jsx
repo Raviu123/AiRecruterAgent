@@ -1,134 +1,199 @@
 "use client"
-import React, { useState } from 'react'
-import { APTITUDE_CATEGORIES, APTITUDE_TOPICS } from '@/modules/aptitude/aptitudeService'
-import { Brain, BookOpen, Clock, Award } from 'lucide-react'
+import React, { useCallback, useEffect, useState } from 'react'
+import { toast } from 'sonner'
+import { Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useUser } from '@/app/provider'
+import {
+  EMPTY_CATALOG,
+  fetchAptitudeAttempt,
+  fetchAptitudeAttempts,
+  fetchAptitudeCatalog,
+  startAptitudeQuiz,
+  submitAptitudeQuiz,
+} from '@/modules/aptitude/aptitudeService'
+import AttemptHistory from './_components/AttemptHistory'
+import QuizConfigurator from './_components/QuizConfigurator'
+import QuizResults from './_components/QuizResults'
+import QuizRunner from './_components/QuizRunner'
 
+const CONFIG = "config"
+const QUIZ = "quiz"
+const RESULT = "result"
+
+const DEFAULT_CONFIG = { category: "", topic: "", difficulty: "mixed", questionCount: 10 }
+
+/**
+ * Aptitude playground: configure a drill, sit the timed paper, then review the marked
+ * answers. Questions come from the seeded Supabase bank via the backend - nothing here
+ * calls the database or an LLM directly.
+ */
 export default function AptitudePlaygroundPage() {
-  const [selectedCategory, setSelectedCategory] = useState(APTITUDE_CATEGORIES[0]);
-  const [selectedDifficulty, setSelectedDifficulty] = useState("medium");
-  const [questionCount, setQuestionCount] = useState(10);
-  const [isQuizActive, setIsQuizActive] = useState(false);
+  const { user } = useUser()
+
+  const [catalog, setCatalog] = useState(EMPTY_CATALOG)
+  const [isLoadingCatalog, setIsLoadingCatalog] = useState(true)
+  const [config, setConfig] = useState(DEFAULT_CONFIG)
+
+  const [stage, setStage] = useState(CONFIG)
+  const [quiz, setQuiz] = useState(null)
+  const [result, setResult] = useState(null)
+  const [attempts, setAttempts] = useState([])
+
+  const [isStarting, setIsStarting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [openingAttemptId, setOpeningAttemptId] = useState(null)
+
+  const loadAttempts = useCallback(
+    () =>
+      fetchAptitudeAttempts()
+        .then(setAttempts)
+        .catch((err) => {
+          console.error("Error loading aptitude attempts:", err)
+        }),
+    []
+  )
+
+  useEffect(() => {
+    if (!user?.email) return
+
+    setIsLoadingCatalog(true)
+    fetchAptitudeCatalog()
+      .then(setCatalog)
+      .catch((err) => {
+        console.error("Error loading aptitude catalog:", err)
+        toast.error(`Could not load the question bank: ${err.message}`)
+      })
+      .finally(() => setIsLoadingCatalog(false))
+
+    loadAttempts()
+  }, [user, loadAttempts])
+
+  // Each stage is a full-page swap, so start the new view from the top.
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [stage])
+
+  const handleStart = async () => {
+    setIsStarting(true)
+    try {
+      const paper = await startAptitudeQuiz(config)
+      setQuiz(paper)
+      setResult(null)
+      setStage(QUIZ)
+    } catch (err) {
+      console.error("Error starting aptitude quiz:", err)
+      toast.error(`Could not start the quiz: ${err.message}`)
+    } finally {
+      setIsStarting(false)
+    }
+  }
+
+  const handleSubmit = async (submission, autoSubmitted) => {
+    setIsSubmitting(true)
+    try {
+      const marked = await submitAptitudeQuiz(quiz.quizId, submission)
+      setResult(marked)
+      setStage(RESULT)
+      toast[autoSubmitted ? "warning" : "success"](
+        autoSubmitted
+          ? `Time is up — scored ${marked.score}/${marked.totalQuestions}.`
+          : `Scored ${marked.score}/${marked.totalQuestions} (${marked.accuracy}%).`
+      )
+      loadAttempts()
+    } catch (err) {
+      console.error("Error submitting aptitude quiz:", err)
+      toast.error(`Could not submit the quiz: ${err.message}`)
+      // Re-thrown so the runner clears its guard and the candidate can try again.
+      throw err
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleReview = async (attemptId) => {
+    setOpeningAttemptId(attemptId)
+    try {
+      const attempt = await fetchAptitudeAttempt(attemptId)
+      setResult(attempt)
+      // So "Retake" from this review runs the same drill the attempt used.
+      setConfig({
+        category: attempt.category || "",
+        topic: attempt.topic || "",
+        difficulty: attempt.difficulty || "mixed",
+        questionCount: attempt.totalQuestions || DEFAULT_CONFIG.questionCount,
+      })
+      setQuiz(null)
+      setStage(RESULT)
+    } catch (err) {
+      console.error("Error loading attempt review:", err)
+      toast.error(`Could not open that attempt: ${err.message}`)
+    } finally {
+      setOpeningAttemptId(null)
+    }
+  }
+
+  const backToConfig = () => {
+    setQuiz(null)
+    setStage(CONFIG)
+  }
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Aptitude Learning Playground</h1>
-        <p className="text-gray-500 mt-1">
-          Master quantitative, reasoning, and verbal aptitude with practice tests ingested from standard reference books.
-        </p>
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">Aptitude Learning Playground</h1>
+          <p className="text-gray-500 mt-1">
+            {stage === QUIZ
+              ? "Answer at your own pace — you can revisit any question before submitting."
+              : "Practise quantitative aptitude with papers drawn from a curated question bank."}
+          </p>
+        </div>
+        {stage === RESULT && (
+          <Button variant="outline" onClick={backToConfig}>
+            Back to Playground
+          </Button>
+        )}
       </div>
 
-      {!isQuizActive ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2 bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-6">
-            <h2 className="text-xl font-semibold flex items-center gap-2">
-              <Brain className="h-5 w-5 text-purple-600" />
-              Configure Test Drill
-            </h2>
-
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Select Category</label>
-                <div className="grid grid-cols-2 gap-3">
-                  {APTITUDE_CATEGORIES.map((cat) => (
-                    <button
-                      key={cat}
-                      onClick={() => setSelectedCategory(cat)}
-                      className={`p-3 rounded-lg border text-left text-sm font-medium transition-all ${
-                        selectedCategory === cat
-                          ? "border-purple-600 bg-purple-50 text-purple-700"
-                          : "border-gray-200 hover:border-gray-300 text-gray-700"
-                      }`}
-                    >
-                      {cat}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Complexity / Difficulty</label>
-                <div className="flex gap-3">
-                  {["easy", "medium", "hard", "mixed"].map((diff) => (
-                    <button
-                      key={diff}
-                      onClick={() => setSelectedDifficulty(diff)}
-                      className={`capitalize px-4 py-2 rounded-lg border text-sm font-medium transition-all ${
-                        selectedDifficulty === diff
-                          ? "border-purple-600 bg-purple-50 text-purple-700"
-                          : "border-gray-200 hover:border-gray-300 text-gray-700"
-                      }`}
-                    >
-                      {diff}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Number of Questions</label>
-                <div className="flex gap-3">
-                  {[5, 10, 15, 20].map((count) => (
-                    <button
-                      key={count}
-                      onClick={() => setQuestionCount(count)}
-                      className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all ${
-                        questionCount === count
-                          ? "border-purple-600 bg-purple-50 text-purple-700"
-                          : "border-gray-200 hover:border-gray-300 text-gray-700"
-                      }`}
-                    >
-                      {count} Questions
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <Button
-                onClick={() => setIsQuizActive(true)}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white mt-4 py-3"
-              >
-                Generate & Start Aptitude Quiz
-              </Button>
-            </div>
+      {stage === CONFIG &&
+        (isLoadingCatalog ? (
+          <div className="flex items-center justify-center gap-2 py-20 text-gray-500">
+            <Loader2 className="h-5 w-5 animate-spin" /> Loading the question bank...
           </div>
+        ) : (
+          <>
+            <QuizConfigurator
+              catalog={catalog}
+              config={config}
+              onChange={setConfig}
+              onStart={handleStart}
+              isStarting={isStarting}
+            />
+            <AttemptHistory
+              attempts={attempts}
+              onReview={handleReview}
+              openingAttemptId={openingAttemptId}
+            />
+          </>
+        ))}
 
-          <div className="space-y-4">
-            <div className="bg-purple-50 p-5 rounded-xl border border-purple-100 space-y-3">
-              <div className="flex items-center gap-2 text-purple-900 font-semibold">
-                <BookOpen className="h-5 w-5 text-purple-600" />
-                Featured Topics
-              </div>
-              <ul className="text-sm text-purple-800 space-y-1.5 list-disc list-inside">
-                {APTITUDE_TOPICS[selectedCategory]?.map((topic) => (
-                  <li key={topic}>{topic}</li>
-                ))}
-              </ul>
-            </div>
+      {stage === QUIZ && quiz && (
+        <QuizRunner
+          key={quiz.quizId}
+          quiz={quiz}
+          onSubmit={handleSubmit}
+          onExit={backToConfig}
+          isSubmitting={isSubmitting}
+        />
+      )}
 
-            <div className="bg-white p-5 rounded-xl border border-gray-200 space-y-2">
-              <div className="flex items-center gap-2 font-semibold text-gray-800">
-                <Clock className="h-5 w-5 text-gray-500" />
-                Timed Practice Mode
-              </div>
-              <p className="text-xs text-gray-500">
-                Each question allows 60 seconds. Get detailed step-by-step solutions after submission.
-              </p>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="bg-white p-8 rounded-xl border border-gray-200 text-center space-y-4">
-          <Award className="h-12 w-12 text-purple-600 mx-auto" />
-          <h2 className="text-2xl font-bold">Quiz Session Initialized</h2>
-          <p className="text-gray-500">
-            Selected: {selectedCategory} ({selectedDifficulty}) — {questionCount} Questions.
-          </p>
-          <Button onClick={() => setIsQuizActive(false)} variant="outline">
-            Exit Quiz & Return to Configurator
-          </Button>
-        </div>
+      {stage === RESULT && result && (
+        <QuizResults
+          result={result}
+          onRetake={handleStart}
+          onNewDrill={backToConfig}
+        />
       )}
     </div>
   )

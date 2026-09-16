@@ -1,0 +1,4802 @@
+[
+  {
+    "id": 1,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q1. Two numbers are in ratio 1:3. If their HCF is 5, what is their LCM?",
+    "options": [
+      "5",
+      "15",
+      "25",
+      "35"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 5 and 15. LCM = ratio_product * HCF = 1 * 3 * 5 = 15."
+  },
+  {
+    "id": 2,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q2. Two numbers are in ratio 2:4. If their HCF is 3, what is their LCM?",
+    "options": [
+      "14",
+      "24",
+      "34",
+      "44"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 6 and 12. LCM = ratio_product * HCF = 2 * 4 * 3 = 24."
+  },
+  {
+    "id": 3,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q3. Two numbers are in ratio 3:5. If their HCF is 5, what is their LCM?",
+    "options": [
+      "65",
+      "75",
+      "85",
+      "95"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 15 and 25. LCM = ratio_product * HCF = 3 * 5 * 5 = 75."
+  },
+  {
+    "id": 4,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q4. Two numbers are in ratio 4:6. If their HCF is 3, what is their LCM?",
+    "options": [
+      "62",
+      "72",
+      "82",
+      "92"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 12 and 18. LCM = ratio_product * HCF = 4 * 6 * 3 = 72."
+  },
+  {
+    "id": 5,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q5. Two numbers are in ratio 5:2. If their HCF is 5, what is their LCM?",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 25 and 10. LCM = ratio_product * HCF = 5 * 2 * 5 = 50."
+  },
+  {
+    "id": 6,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q6. Two numbers are in ratio 6:3. If their HCF is 3, what is their LCM?",
+    "options": [
+      "44",
+      "54",
+      "64",
+      "74"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 18 and 9. LCM = ratio_product * HCF = 6 * 3 * 3 = 54."
+  },
+  {
+    "id": 7,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q7. Two numbers are in ratio 7:4. If their HCF is 5, what is their LCM?",
+    "options": [
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 35 and 20. LCM = ratio_product * HCF = 7 * 4 * 5 = 140."
+  },
+  {
+    "id": 8,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q8. Two numbers are in ratio 8:5. If their HCF is 3, what is their LCM?",
+    "options": [
+      "110",
+      "120",
+      "130",
+      "140"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 24 and 15. LCM = ratio_product * HCF = 8 * 5 * 3 = 120."
+  },
+  {
+    "id": 9,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q9. Two numbers are in ratio 9:6. If their HCF is 5, what is their LCM?",
+    "options": [
+      "260",
+      "270",
+      "280",
+      "290"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 45 and 30. LCM = ratio_product * HCF = 9 * 6 * 5 = 270."
+  },
+  {
+    "id": 10,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q10. Two numbers are in ratio 10:2. If their HCF is 3, what is their LCM?",
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 30 and 6. LCM = ratio_product * HCF = 10 * 2 * 3 = 60."
+  },
+  {
+    "id": 11,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q11. Two numbers are in ratio 11:3. If their HCF is 5, what is their LCM?",
+    "options": [
+      "155",
+      "165",
+      "175",
+      "185"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 55 and 15. LCM = ratio_product * HCF = 11 * 3 * 5 = 165."
+  },
+  {
+    "id": 12,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "easy",
+    "questionText": "Q12. Two numbers are in ratio 12:4. If their HCF is 3, what is their LCM?",
+    "options": [
+      "134",
+      "144",
+      "154",
+      "164"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 36 and 12. LCM = ratio_product * HCF = 12 * 4 * 3 = 144."
+  },
+  {
+    "id": 13,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q13. Two numbers are in ratio 13:5. If their HCF is 5, what is their LCM?",
+    "options": [
+      "315",
+      "325",
+      "335",
+      "345"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 65 and 25. LCM = ratio_product * HCF = 13 * 5 * 5 = 325."
+  },
+  {
+    "id": 14,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q14. Two numbers are in ratio 14:6. If their HCF is 3, what is their LCM?",
+    "options": [
+      "242",
+      "252",
+      "262",
+      "272"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 42 and 18. LCM = ratio_product * HCF = 14 * 6 * 3 = 252."
+  },
+  {
+    "id": 15,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q15. Two numbers are in ratio 15:2. If their HCF is 5, what is their LCM?",
+    "options": [
+      "140",
+      "150",
+      "160",
+      "170"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 75 and 10. LCM = ratio_product * HCF = 15 * 2 * 5 = 150."
+  },
+  {
+    "id": 16,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q16. Two numbers are in ratio 16:3. If their HCF is 3, what is their LCM?",
+    "options": [
+      "134",
+      "144",
+      "154",
+      "164"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 48 and 9. LCM = ratio_product * HCF = 16 * 3 * 3 = 144."
+  },
+  {
+    "id": 17,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q17. Two numbers are in ratio 17:4. If their HCF is 5, what is their LCM?",
+    "options": [
+      "330",
+      "340",
+      "350",
+      "360"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 85 and 20. LCM = ratio_product * HCF = 17 * 4 * 5 = 340."
+  },
+  {
+    "id": 18,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q18. Two numbers are in ratio 18:5. If their HCF is 3, what is their LCM?",
+    "options": [
+      "260",
+      "270",
+      "280",
+      "290"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 54 and 15. LCM = ratio_product * HCF = 18 * 5 * 3 = 270."
+  },
+  {
+    "id": 19,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q19. Two numbers are in ratio 19:6. If their HCF is 5, what is their LCM?",
+    "options": [
+      "560",
+      "570",
+      "580",
+      "590"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 95 and 30. LCM = ratio_product * HCF = 19 * 6 * 5 = 570."
+  },
+  {
+    "id": 20,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q20. Two numbers are in ratio 20:2. If their HCF is 3, what is their LCM?",
+    "options": [
+      "110",
+      "120",
+      "130",
+      "140"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 60 and 6. LCM = ratio_product * HCF = 20 * 2 * 3 = 120."
+  },
+  {
+    "id": 21,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q21. Two numbers are in ratio 21:3. If their HCF is 5, what is their LCM?",
+    "options": [
+      "305",
+      "315",
+      "325",
+      "335"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 105 and 15. LCM = ratio_product * HCF = 21 * 3 * 5 = 315."
+  },
+  {
+    "id": 22,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q22. Two numbers are in ratio 22:4. If their HCF is 3, what is their LCM?",
+    "options": [
+      "254",
+      "264",
+      "274",
+      "284"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 66 and 12. LCM = ratio_product * HCF = 22 * 4 * 3 = 264."
+  },
+  {
+    "id": 23,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q23. Two numbers are in ratio 23:5. If their HCF is 5, what is their LCM?",
+    "options": [
+      "565",
+      "575",
+      "585",
+      "595"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 115 and 25. LCM = ratio_product * HCF = 23 * 5 * 5 = 575."
+  },
+  {
+    "id": 24,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q24. Two numbers are in ratio 24:6. If their HCF is 3, what is their LCM?",
+    "options": [
+      "422",
+      "432",
+      "442",
+      "452"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 72 and 18. LCM = ratio_product * HCF = 24 * 6 * 3 = 432."
+  },
+  {
+    "id": 25,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q25. Two numbers are in ratio 25:2. If their HCF is 5, what is their LCM?",
+    "options": [
+      "240",
+      "250",
+      "260",
+      "270"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 125 and 10. LCM = ratio_product * HCF = 25 * 2 * 5 = 250."
+  },
+  {
+    "id": 26,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q26. Two numbers are in ratio 26:3. If their HCF is 3, what is their LCM?",
+    "options": [
+      "224",
+      "234",
+      "244",
+      "254"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 78 and 9. LCM = ratio_product * HCF = 26 * 3 * 3 = 234."
+  },
+  {
+    "id": 27,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q27. Two numbers are in ratio 27:4. If their HCF is 5, what is their LCM?",
+    "options": [
+      "530",
+      "540",
+      "550",
+      "560"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 135 and 20. LCM = ratio_product * HCF = 27 * 4 * 5 = 540."
+  },
+  {
+    "id": 28,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q28. Two numbers are in ratio 28:5. If their HCF is 3, what is their LCM?",
+    "options": [
+      "410",
+      "420",
+      "430",
+      "440"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 84 and 15. LCM = ratio_product * HCF = 28 * 5 * 3 = 420."
+  },
+  {
+    "id": 29,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q29. Two numbers are in ratio 29:6. If their HCF is 5, what is their LCM?",
+    "options": [
+      "860",
+      "870",
+      "880",
+      "890"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 145 and 30. LCM = ratio_product * HCF = 29 * 6 * 5 = 870."
+  },
+  {
+    "id": 30,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "medium",
+    "questionText": "Q30. Two numbers are in ratio 30:2. If their HCF is 3, what is their LCM?",
+    "options": [
+      "170",
+      "180",
+      "190",
+      "200"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 90 and 6. LCM = ratio_product * HCF = 30 * 2 * 3 = 180."
+  },
+  {
+    "id": 31,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q31. Two numbers are in ratio 31:3. If their HCF is 5, what is their LCM?",
+    "options": [
+      "455",
+      "465",
+      "475",
+      "485"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 155 and 15. LCM = ratio_product * HCF = 31 * 3 * 5 = 465."
+  },
+  {
+    "id": 32,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q32. Two numbers are in ratio 32:4. If their HCF is 3, what is their LCM?",
+    "options": [
+      "374",
+      "384",
+      "394",
+      "404"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 96 and 12. LCM = ratio_product * HCF = 32 * 4 * 3 = 384."
+  },
+  {
+    "id": 33,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q33. Two numbers are in ratio 33:5. If their HCF is 5, what is their LCM?",
+    "options": [
+      "815",
+      "825",
+      "835",
+      "845"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 165 and 25. LCM = ratio_product * HCF = 33 * 5 * 5 = 825."
+  },
+  {
+    "id": 34,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q34. Two numbers are in ratio 34:6. If their HCF is 3, what is their LCM?",
+    "options": [
+      "602",
+      "612",
+      "622",
+      "632"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 102 and 18. LCM = ratio_product * HCF = 34 * 6 * 3 = 612."
+  },
+  {
+    "id": 35,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q35. Two numbers are in ratio 35:2. If their HCF is 5, what is their LCM?",
+    "options": [
+      "340",
+      "350",
+      "360",
+      "370"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 175 and 10. LCM = ratio_product * HCF = 35 * 2 * 5 = 350."
+  },
+  {
+    "id": 36,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q36. Two numbers are in ratio 36:3. If their HCF is 3, what is their LCM?",
+    "options": [
+      "314",
+      "324",
+      "334",
+      "344"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 108 and 9. LCM = ratio_product * HCF = 36 * 3 * 3 = 324."
+  },
+  {
+    "id": 37,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q37. Two numbers are in ratio 37:4. If their HCF is 5, what is their LCM?",
+    "options": [
+      "730",
+      "740",
+      "750",
+      "760"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 185 and 20. LCM = ratio_product * HCF = 37 * 4 * 5 = 740."
+  },
+  {
+    "id": 38,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q38. Two numbers are in ratio 38:5. If their HCF is 3, what is their LCM?",
+    "options": [
+      "560",
+      "570",
+      "580",
+      "590"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 114 and 15. LCM = ratio_product * HCF = 38 * 5 * 3 = 570."
+  },
+  {
+    "id": 39,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q39. Two numbers are in ratio 39:6. If their HCF is 5, what is their LCM?",
+    "options": [
+      "1160",
+      "1170",
+      "1180",
+      "1190"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 195 and 30. LCM = ratio_product * HCF = 39 * 6 * 5 = 1170."
+  },
+  {
+    "id": 40,
+    "category": "Numbers & HCF/LCM",
+    "topic": "Number System, Divisibility & HCF/LCM",
+    "difficulty": "hard",
+    "questionText": "Q40. Two numbers are in ratio 40:2. If their HCF is 3, what is their LCM?",
+    "options": [
+      "230",
+      "240",
+      "250",
+      "260"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Numbers are 120 and 6. LCM = ratio_product * HCF = 40 * 2 * 3 = 240."
+  },
+  {
+    "id": 1,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q1. If a salary of $150 is increased by 12%, what is the new salary?",
+    "options": [
+      "$148",
+      "$168",
+      "$188",
+      "$208"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 150 + (12/100)*150 = 150 + 18 = $168."
+  },
+  {
+    "id": 2,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q2. If a salary of $200 is increased by 14%, what is the new salary?",
+    "options": [
+      "$208",
+      "$228",
+      "$248",
+      "$268"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 200 + (14/100)*200 = 200 + 28 = $228."
+  },
+  {
+    "id": 3,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q3. If a salary of $250 is increased by 16%, what is the new salary?",
+    "options": [
+      "$270",
+      "$290",
+      "$310",
+      "$330"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 250 + (16/100)*250 = 250 + 40 = $290."
+  },
+  {
+    "id": 4,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q4. If a salary of $300 is increased by 18%, what is the new salary?",
+    "options": [
+      "$334",
+      "$354",
+      "$374",
+      "$394"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 300 + (18/100)*300 = 300 + 54 = $354."
+  },
+  {
+    "id": 5,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q5. If a salary of $350 is increased by 20%, what is the new salary?",
+    "options": [
+      "$400",
+      "$420",
+      "$440",
+      "$460"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 350 + (20/100)*350 = 350 + 70 = $420."
+  },
+  {
+    "id": 6,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q6. If a salary of $400 is increased by 22%, what is the new salary?",
+    "options": [
+      "$468",
+      "$488",
+      "$508",
+      "$528"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 400 + (22/100)*400 = 400 + 88 = $488."
+  },
+  {
+    "id": 7,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q7. If a salary of $450 is increased by 24%, what is the new salary?",
+    "options": [
+      "$538",
+      "$558",
+      "$578",
+      "$598"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 450 + (24/100)*450 = 450 + 108 = $558."
+  },
+  {
+    "id": 8,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q8. If a salary of $500 is increased by 26%, what is the new salary?",
+    "options": [
+      "$610",
+      "$630",
+      "$650",
+      "$670"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 500 + (26/100)*500 = 500 + 130 = $630."
+  },
+  {
+    "id": 9,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q9. If a salary of $550 is increased by 28%, what is the new salary?",
+    "options": [
+      "$684",
+      "$704",
+      "$724",
+      "$744"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 550 + (28/100)*550 = 550 + 154 = $704."
+  },
+  {
+    "id": 10,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q10. If a salary of $600 is increased by 30%, what is the new salary?",
+    "options": [
+      "$760",
+      "$780",
+      "$800",
+      "$820"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 600 + (30/100)*600 = 600 + 180 = $780."
+  },
+  {
+    "id": 11,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q11. If a salary of $650 is increased by 32%, what is the new salary?",
+    "options": [
+      "$838",
+      "$858",
+      "$878",
+      "$898"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 650 + (32/100)*650 = 650 + 208 = $858."
+  },
+  {
+    "id": 12,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "easy",
+    "questionText": "Q12. If a salary of $700 is increased by 34%, what is the new salary?",
+    "options": [
+      "$918",
+      "$938",
+      "$958",
+      "$978"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 700 + (34/100)*700 = 700 + 238 = $938."
+  },
+  {
+    "id": 13,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q13. If a salary of $750 is increased by 36%, what is the new salary?",
+    "options": [
+      "$999",
+      "$1019",
+      "$1039",
+      "$1059"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 750 + (36/100)*750 = 750 + 270 = $1019."
+  },
+  {
+    "id": 14,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q14. If a salary of $800 is increased by 38%, what is the new salary?",
+    "options": [
+      "$1084",
+      "$1104",
+      "$1124",
+      "$1144"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 800 + (38/100)*800 = 800 + 304 = $1104."
+  },
+  {
+    "id": 15,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q15. If a salary of $850 is increased by 10%, what is the new salary?",
+    "options": [
+      "$915",
+      "$935",
+      "$955",
+      "$975"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 850 + (10/100)*850 = 850 + 85 = $935."
+  },
+  {
+    "id": 16,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q16. If a salary of $900 is increased by 12%, what is the new salary?",
+    "options": [
+      "$988",
+      "$1008",
+      "$1028",
+      "$1048"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 900 + (12/100)*900 = 900 + 108 = $1008."
+  },
+  {
+    "id": 17,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q17. If a salary of $950 is increased by 14%, what is the new salary?",
+    "options": [
+      "$1063",
+      "$1083",
+      "$1103",
+      "$1123"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 950 + (14/100)*950 = 950 + 133 = $1083."
+  },
+  {
+    "id": 18,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q18. If a salary of $1000 is increased by 16%, what is the new salary?",
+    "options": [
+      "$1140",
+      "$1160",
+      "$1180",
+      "$1200"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1000 + (16/100)*1000 = 1000 + 160 = $1160."
+  },
+  {
+    "id": 19,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q19. If a salary of $1050 is increased by 18%, what is the new salary?",
+    "options": [
+      "$1219",
+      "$1239",
+      "$1259",
+      "$1279"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1050 + (18/100)*1050 = 1050 + 189 = $1239."
+  },
+  {
+    "id": 20,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q20. If a salary of $1100 is increased by 20%, what is the new salary?",
+    "options": [
+      "$1300",
+      "$1320",
+      "$1340",
+      "$1360"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1100 + (20/100)*1100 = 1100 + 220 = $1320."
+  },
+  {
+    "id": 21,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q21. If a salary of $1150 is increased by 22%, what is the new salary?",
+    "options": [
+      "$1383",
+      "$1403",
+      "$1423",
+      "$1443"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1150 + (22/100)*1150 = 1150 + 253 = $1403."
+  },
+  {
+    "id": 22,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q22. If a salary of $1200 is increased by 24%, what is the new salary?",
+    "options": [
+      "$1468",
+      "$1488",
+      "$1508",
+      "$1528"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1200 + (24/100)*1200 = 1200 + 288 = $1488."
+  },
+  {
+    "id": 23,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q23. If a salary of $1250 is increased by 26%, what is the new salary?",
+    "options": [
+      "$1555",
+      "$1575",
+      "$1595",
+      "$1615"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1250 + (26/100)*1250 = 1250 + 325 = $1575."
+  },
+  {
+    "id": 24,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q24. If a salary of $1300 is increased by 28%, what is the new salary?",
+    "options": [
+      "$1644",
+      "$1664",
+      "$1684",
+      "$1704"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1300 + (28/100)*1300 = 1300 + 364 = $1664."
+  },
+  {
+    "id": 25,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q25. If a salary of $1350 is increased by 30%, what is the new salary?",
+    "options": [
+      "$1735",
+      "$1755",
+      "$1775",
+      "$1795"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1350 + (30/100)*1350 = 1350 + 405 = $1755."
+  },
+  {
+    "id": 26,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q26. If a salary of $1400 is increased by 32%, what is the new salary?",
+    "options": [
+      "$1828",
+      "$1848",
+      "$1868",
+      "$1888"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1400 + (32/100)*1400 = 1400 + 448 = $1848."
+  },
+  {
+    "id": 27,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q27. If a salary of $1450 is increased by 34%, what is the new salary?",
+    "options": [
+      "$1923",
+      "$1943",
+      "$1963",
+      "$1983"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1450 + (34/100)*1450 = 1450 + 493 = $1943."
+  },
+  {
+    "id": 28,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q28. If a salary of $1500 is increased by 36%, what is the new salary?",
+    "options": [
+      "$2019",
+      "$2039",
+      "$2059",
+      "$2079"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1500 + (36/100)*1500 = 1500 + 540 = $2039."
+  },
+  {
+    "id": 29,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q29. If a salary of $1550 is increased by 38%, what is the new salary?",
+    "options": [
+      "$2119",
+      "$2139",
+      "$2159",
+      "$2179"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1550 + (38/100)*1550 = 1550 + 589 = $2139."
+  },
+  {
+    "id": 30,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "medium",
+    "questionText": "Q30. If a salary of $1600 is increased by 10%, what is the new salary?",
+    "options": [
+      "$1740",
+      "$1760",
+      "$1780",
+      "$1800"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1600 + (10/100)*1600 = 1600 + 160 = $1760."
+  },
+  {
+    "id": 31,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q31. If a salary of $1650 is increased by 12%, what is the new salary?",
+    "options": [
+      "$1828",
+      "$1848",
+      "$1868",
+      "$1888"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1650 + (12/100)*1650 = 1650 + 198 = $1848."
+  },
+  {
+    "id": 32,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q32. If a salary of $1700 is increased by 14%, what is the new salary?",
+    "options": [
+      "$1918",
+      "$1938",
+      "$1958",
+      "$1978"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1700 + (14/100)*1700 = 1700 + 238 = $1938."
+  },
+  {
+    "id": 33,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q33. If a salary of $1750 is increased by 16%, what is the new salary?",
+    "options": [
+      "$2009",
+      "$2029",
+      "$2049",
+      "$2069"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1750 + (16/100)*1750 = 1750 + 280 = $2029."
+  },
+  {
+    "id": 34,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q34. If a salary of $1800 is increased by 18%, what is the new salary?",
+    "options": [
+      "$2104",
+      "$2124",
+      "$2144",
+      "$2164"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1800 + (18/100)*1800 = 1800 + 324 = $2124."
+  },
+  {
+    "id": 35,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q35. If a salary of $1850 is increased by 20%, what is the new salary?",
+    "options": [
+      "$2200",
+      "$2220",
+      "$2240",
+      "$2260"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1850 + (20/100)*1850 = 1850 + 370 = $2220."
+  },
+  {
+    "id": 36,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q36. If a salary of $1900 is increased by 22%, what is the new salary?",
+    "options": [
+      "$2298",
+      "$2318",
+      "$2338",
+      "$2358"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1900 + (22/100)*1900 = 1900 + 418 = $2318."
+  },
+  {
+    "id": 37,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q37. If a salary of $1950 is increased by 24%, what is the new salary?",
+    "options": [
+      "$2398",
+      "$2418",
+      "$2438",
+      "$2458"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 1950 + (24/100)*1950 = 1950 + 468 = $2418."
+  },
+  {
+    "id": 38,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q38. If a salary of $2000 is increased by 26%, what is the new salary?",
+    "options": [
+      "$2500",
+      "$2520",
+      "$2540",
+      "$2560"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 2000 + (26/100)*2000 = 2000 + 520 = $2520."
+  },
+  {
+    "id": 39,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q39. If a salary of $2050 is increased by 28%, what is the new salary?",
+    "options": [
+      "$2604",
+      "$2624",
+      "$2644",
+      "$2664"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 2050 + (28/100)*2050 = 2050 + 574 = $2624."
+  },
+  {
+    "id": 40,
+    "category": "Percentages",
+    "topic": "Percentage Calculations & Applications",
+    "difficulty": "hard",
+    "questionText": "Q40. If a salary of $2100 is increased by 30%, what is the new salary?",
+    "options": [
+      "$2710",
+      "$2730",
+      "$2750",
+      "$2770"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "New salary = 2100 + (30/100)*2100 = 2100 + 630 = $2730."
+  },
+  {
+    "id": 1,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q1. An article bought for $225 is sold at a profit of 8%. Find the selling price.",
+    "options": [
+      "$228",
+      "$253",
+      "$243",
+      "$268"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 225 * (100 + 8)/100 = $243."
+  },
+  {
+    "id": 2,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q2. An article bought for $250 is sold at a profit of 11%. Find the selling price.",
+    "options": [
+      "$262",
+      "$287",
+      "$277",
+      "$302"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 250 * (100 + 11)/100 = $277."
+  },
+  {
+    "id": 3,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q3. An article bought for $275 is sold at a profit of 14%. Find the selling price.",
+    "options": [
+      "$298",
+      "$323",
+      "$313",
+      "$338"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 275 * (100 + 14)/100 = $313."
+  },
+  {
+    "id": 4,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q4. An article bought for $300 is sold at a profit of 17%. Find the selling price.",
+    "options": [
+      "$336",
+      "$361",
+      "$351",
+      "$376"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 300 * (100 + 17)/100 = $351."
+  },
+  {
+    "id": 5,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q5. An article bought for $325 is sold at a profit of 20%. Find the selling price.",
+    "options": [
+      "$375",
+      "$400",
+      "$390",
+      "$415"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 325 * (100 + 20)/100 = $390."
+  },
+  {
+    "id": 6,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q6. An article bought for $350 is sold at a profit of 23%. Find the selling price.",
+    "options": [
+      "$415",
+      "$440",
+      "$430",
+      "$455"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 350 * (100 + 23)/100 = $430."
+  },
+  {
+    "id": 7,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q7. An article bought for $375 is sold at a profit of 26%. Find the selling price.",
+    "options": [
+      "$457",
+      "$482",
+      "$472",
+      "$497"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 375 * (100 + 26)/100 = $472."
+  },
+  {
+    "id": 8,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q8. An article bought for $400 is sold at a profit of 29%. Find the selling price.",
+    "options": [
+      "$501",
+      "$526",
+      "$516",
+      "$541"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 400 * (100 + 29)/100 = $516."
+  },
+  {
+    "id": 9,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q9. An article bought for $425 is sold at a profit of 32%. Find the selling price.",
+    "options": [
+      "$546",
+      "$571",
+      "$561",
+      "$586"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 425 * (100 + 32)/100 = $561."
+  },
+  {
+    "id": 10,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q10. An article bought for $450 is sold at a profit of 5%. Find the selling price.",
+    "options": [
+      "$457",
+      "$482",
+      "$472",
+      "$497"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 450 * (100 + 5)/100 = $472."
+  },
+  {
+    "id": 11,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q11. An article bought for $475 is sold at a profit of 8%. Find the selling price.",
+    "options": [
+      "$498",
+      "$523",
+      "$513",
+      "$538"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 475 * (100 + 8)/100 = $513."
+  },
+  {
+    "id": 12,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "easy",
+    "questionText": "Q12. An article bought for $500 is sold at a profit of 11%. Find the selling price.",
+    "options": [
+      "$540",
+      "$565",
+      "$555",
+      "$580"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 500 * (100 + 11)/100 = $555."
+  },
+  {
+    "id": 13,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q13. An article bought for $525 is sold at a profit of 14%. Find the selling price.",
+    "options": [
+      "$583",
+      "$608",
+      "$598",
+      "$623"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 525 * (100 + 14)/100 = $598."
+  },
+  {
+    "id": 14,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q14. An article bought for $550 is sold at a profit of 17%. Find the selling price.",
+    "options": [
+      "$628",
+      "$653",
+      "$643",
+      "$668"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 550 * (100 + 17)/100 = $643."
+  },
+  {
+    "id": 15,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q15. An article bought for $575 is sold at a profit of 20%. Find the selling price.",
+    "options": [
+      "$675",
+      "$700",
+      "$690",
+      "$715"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 575 * (100 + 20)/100 = $690."
+  },
+  {
+    "id": 16,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q16. An article bought for $600 is sold at a profit of 23%. Find the selling price.",
+    "options": [
+      "$723",
+      "$748",
+      "$738",
+      "$763"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 600 * (100 + 23)/100 = $738."
+  },
+  {
+    "id": 17,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q17. An article bought for $625 is sold at a profit of 26%. Find the selling price.",
+    "options": [
+      "$772",
+      "$797",
+      "$787",
+      "$812"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 625 * (100 + 26)/100 = $787."
+  },
+  {
+    "id": 18,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q18. An article bought for $650 is sold at a profit of 29%. Find the selling price.",
+    "options": [
+      "$823",
+      "$848",
+      "$838",
+      "$863"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 650 * (100 + 29)/100 = $838."
+  },
+  {
+    "id": 19,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q19. An article bought for $675 is sold at a profit of 32%. Find the selling price.",
+    "options": [
+      "$876",
+      "$901",
+      "$891",
+      "$916"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 675 * (100 + 32)/100 = $891."
+  },
+  {
+    "id": 20,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q20. An article bought for $700 is sold at a profit of 5%. Find the selling price.",
+    "options": [
+      "$720",
+      "$745",
+      "$735",
+      "$760"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 700 * (100 + 5)/100 = $735."
+  },
+  {
+    "id": 21,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q21. An article bought for $725 is sold at a profit of 8%. Find the selling price.",
+    "options": [
+      "$768",
+      "$793",
+      "$783",
+      "$808"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 725 * (100 + 8)/100 = $783."
+  },
+  {
+    "id": 22,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q22. An article bought for $750 is sold at a profit of 11%. Find the selling price.",
+    "options": [
+      "$817",
+      "$842",
+      "$832",
+      "$857"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 750 * (100 + 11)/100 = $832."
+  },
+  {
+    "id": 23,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q23. An article bought for $775 is sold at a profit of 14%. Find the selling price.",
+    "options": [
+      "$868",
+      "$893",
+      "$883",
+      "$908"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 775 * (100 + 14)/100 = $883."
+  },
+  {
+    "id": 24,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q24. An article bought for $800 is sold at a profit of 17%. Find the selling price.",
+    "options": [
+      "$921",
+      "$946",
+      "$936",
+      "$961"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 800 * (100 + 17)/100 = $936."
+  },
+  {
+    "id": 25,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q25. An article bought for $825 is sold at a profit of 20%. Find the selling price.",
+    "options": [
+      "$975",
+      "$1000",
+      "$990",
+      "$1015"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 825 * (100 + 20)/100 = $990."
+  },
+  {
+    "id": 26,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q26. An article bought for $850 is sold at a profit of 23%. Find the selling price.",
+    "options": [
+      "$1030",
+      "$1055",
+      "$1045",
+      "$1070"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 850 * (100 + 23)/100 = $1045."
+  },
+  {
+    "id": 27,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q27. An article bought for $875 is sold at a profit of 26%. Find the selling price.",
+    "options": [
+      "$1087",
+      "$1112",
+      "$1102",
+      "$1127"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 875 * (100 + 26)/100 = $1102."
+  },
+  {
+    "id": 28,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q28. An article bought for $900 is sold at a profit of 29%. Find the selling price.",
+    "options": [
+      "$1146",
+      "$1171",
+      "$1161",
+      "$1186"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 900 * (100 + 29)/100 = $1161."
+  },
+  {
+    "id": 29,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q29. An article bought for $925 is sold at a profit of 32%. Find the selling price.",
+    "options": [
+      "$1206",
+      "$1231",
+      "$1221",
+      "$1246"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 925 * (100 + 32)/100 = $1221."
+  },
+  {
+    "id": 30,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "medium",
+    "questionText": "Q30. An article bought for $950 is sold at a profit of 5%. Find the selling price.",
+    "options": [
+      "$982",
+      "$1007",
+      "$997",
+      "$1022"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 950 * (100 + 5)/100 = $997."
+  },
+  {
+    "id": 31,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q31. An article bought for $975 is sold at a profit of 8%. Find the selling price.",
+    "options": [
+      "$1038",
+      "$1063",
+      "$1053",
+      "$1078"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 975 * (100 + 8)/100 = $1053."
+  },
+  {
+    "id": 32,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q32. An article bought for $1000 is sold at a profit of 11%. Find the selling price.",
+    "options": [
+      "$1095",
+      "$1120",
+      "$1110",
+      "$1135"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1000 * (100 + 11)/100 = $1110."
+  },
+  {
+    "id": 33,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q33. An article bought for $1025 is sold at a profit of 14%. Find the selling price.",
+    "options": [
+      "$1153",
+      "$1178",
+      "$1168",
+      "$1193"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1025 * (100 + 14)/100 = $1168."
+  },
+  {
+    "id": 34,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q34. An article bought for $1050 is sold at a profit of 17%. Find the selling price.",
+    "options": [
+      "$1213",
+      "$1238",
+      "$1228",
+      "$1253"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1050 * (100 + 17)/100 = $1228."
+  },
+  {
+    "id": 35,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q35. An article bought for $1075 is sold at a profit of 20%. Find the selling price.",
+    "options": [
+      "$1275",
+      "$1300",
+      "$1290",
+      "$1315"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1075 * (100 + 20)/100 = $1290."
+  },
+  {
+    "id": 36,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q36. An article bought for $1100 is sold at a profit of 23%. Find the selling price.",
+    "options": [
+      "$1338",
+      "$1363",
+      "$1353",
+      "$1378"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1100 * (100 + 23)/100 = $1353."
+  },
+  {
+    "id": 37,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q37. An article bought for $1125 is sold at a profit of 26%. Find the selling price.",
+    "options": [
+      "$1402",
+      "$1427",
+      "$1417",
+      "$1442"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1125 * (100 + 26)/100 = $1417."
+  },
+  {
+    "id": 38,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q38. An article bought for $1150 is sold at a profit of 29%. Find the selling price.",
+    "options": [
+      "$1468",
+      "$1493",
+      "$1483",
+      "$1508"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1150 * (100 + 29)/100 = $1483."
+  },
+  {
+    "id": 39,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q39. An article bought for $1175 is sold at a profit of 32%. Find the selling price.",
+    "options": [
+      "$1536",
+      "$1561",
+      "$1551",
+      "$1576"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1175 * (100 + 32)/100 = $1551."
+  },
+  {
+    "id": 40,
+    "category": "Profit, Loss & Discount",
+    "topic": "Commercial Math & Markups",
+    "difficulty": "hard",
+    "questionText": "Q40. An article bought for $1200 is sold at a profit of 5%. Find the selling price.",
+    "options": [
+      "$1245",
+      "$1270",
+      "$1260",
+      "$1285"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Selling Price (SP) = CP * (100 + Profit%)/100 = 1200 * (100 + 5)/100 = $1260."
+  },
+  {
+    "id": 1,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q1. A can finish a piece of work in 12 days and B in 18 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "7.2 days",
+      "9.2 days",
+      "6.2 days",
+      "30 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/18. Combined 1 day work = 1/12 + 1/18 = 30/(216). Total days = 7.2 days."
+  },
+  {
+    "id": 2,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q2. A can finish a piece of work in 14 days and B in 21 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.4 days",
+      "10.4 days",
+      "7.4 days",
+      "35 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/14, B's 1 day work = 1/21. Combined 1 day work = 1/14 + 1/21 = 35/(294). Total days = 8.4 days."
+  },
+  {
+    "id": 3,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q3. A can finish a piece of work in 16 days and B in 24 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.6 days",
+      "11.6 days",
+      "8.6 days",
+      "40 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/16, B's 1 day work = 1/24. Combined 1 day work = 1/16 + 1/24 = 40/(384). Total days = 9.6 days."
+  },
+  {
+    "id": 4,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q4. A can finish a piece of work in 18 days and B in 27 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.8 days",
+      "12.8 days",
+      "9.8 days",
+      "45 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/18, B's 1 day work = 1/27. Combined 1 day work = 1/18 + 1/27 = 45/(486). Total days = 10.8 days."
+  },
+  {
+    "id": 5,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q5. A can finish a piece of work in 20 days and B in 30 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "12.0 days",
+      "14.0 days",
+      "11.0 days",
+      "50 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/20, B's 1 day work = 1/30. Combined 1 day work = 1/20 + 1/30 = 50/(600). Total days = 12.0 days."
+  },
+  {
+    "id": 6,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q6. A can finish a piece of work in 22 days and B in 33 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "13.2 days",
+      "15.2 days",
+      "12.2 days",
+      "55 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/22, B's 1 day work = 1/33. Combined 1 day work = 1/22 + 1/33 = 55/(726). Total days = 13.2 days."
+  },
+  {
+    "id": 7,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q7. A can finish a piece of work in 24 days and B in 36 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "14.4 days",
+      "16.4 days",
+      "13.4 days",
+      "60 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/24, B's 1 day work = 1/36. Combined 1 day work = 1/24 + 1/36 = 60/(864). Total days = 14.4 days."
+  },
+  {
+    "id": 8,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q8. A can finish a piece of work in 10 days and B in 39 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "7.96 days",
+      "9.96 days",
+      "6.96 days",
+      "49 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/39. Combined 1 day work = 1/10 + 1/39 = 49/(390). Total days = 7.96 days."
+  },
+  {
+    "id": 9,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q9. A can finish a piece of work in 12 days and B in 42 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.33 days",
+      "11.33 days",
+      "8.33 days",
+      "54 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/42. Combined 1 day work = 1/12 + 1/42 = 54/(504). Total days = 9.33 days."
+  },
+  {
+    "id": 10,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q10. A can finish a piece of work in 14 days and B in 15 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "7.24 days",
+      "9.24 days",
+      "6.24 days",
+      "29 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/14, B's 1 day work = 1/15. Combined 1 day work = 1/14 + 1/15 = 29/(210). Total days = 7.24 days."
+  },
+  {
+    "id": 11,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q11. A can finish a piece of work in 16 days and B in 18 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.47 days",
+      "10.47 days",
+      "7.470000000000001 days",
+      "34 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/16, B's 1 day work = 1/18. Combined 1 day work = 1/16 + 1/18 = 34/(288). Total days = 8.47 days."
+  },
+  {
+    "id": 12,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "easy",
+    "questionText": "Q12. A can finish a piece of work in 18 days and B in 21 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.69 days",
+      "11.69 days",
+      "8.69 days",
+      "39 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/18, B's 1 day work = 1/21. Combined 1 day work = 1/18 + 1/21 = 39/(378). Total days = 9.69 days."
+  },
+  {
+    "id": 13,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q13. A can finish a piece of work in 20 days and B in 24 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.91 days",
+      "12.91 days",
+      "9.91 days",
+      "44 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/20, B's 1 day work = 1/24. Combined 1 day work = 1/20 + 1/24 = 44/(480). Total days = 10.91 days."
+  },
+  {
+    "id": 14,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q14. A can finish a piece of work in 22 days and B in 27 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "12.12 days",
+      "14.12 days",
+      "11.12 days",
+      "49 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/22, B's 1 day work = 1/27. Combined 1 day work = 1/22 + 1/27 = 49/(594). Total days = 12.12 days."
+  },
+  {
+    "id": 15,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q15. A can finish a piece of work in 24 days and B in 30 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "13.33 days",
+      "15.33 days",
+      "12.33 days",
+      "54 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/24, B's 1 day work = 1/30. Combined 1 day work = 1/24 + 1/30 = 54/(720). Total days = 13.33 days."
+  },
+  {
+    "id": 16,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q16. A can finish a piece of work in 10 days and B in 33 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "7.67 days",
+      "9.67 days",
+      "6.67 days",
+      "43 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/33. Combined 1 day work = 1/10 + 1/33 = 43/(330). Total days = 7.67 days."
+  },
+  {
+    "id": 17,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q17. A can finish a piece of work in 12 days and B in 36 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.0 days",
+      "11.0 days",
+      "8.0 days",
+      "48 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/36. Combined 1 day work = 1/12 + 1/36 = 48/(432). Total days = 9.0 days."
+  },
+  {
+    "id": 18,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q18. A can finish a piece of work in 14 days and B in 39 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.3 days",
+      "12.3 days",
+      "9.3 days",
+      "53 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/14, B's 1 day work = 1/39. Combined 1 day work = 1/14 + 1/39 = 53/(546). Total days = 10.3 days."
+  },
+  {
+    "id": 19,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q19. A can finish a piece of work in 16 days and B in 42 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "11.59 days",
+      "13.59 days",
+      "10.59 days",
+      "58 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/16, B's 1 day work = 1/42. Combined 1 day work = 1/16 + 1/42 = 58/(672). Total days = 11.59 days."
+  },
+  {
+    "id": 20,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q20. A can finish a piece of work in 18 days and B in 15 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.18 days",
+      "10.18 days",
+      "7.18 days",
+      "33 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/18, B's 1 day work = 1/15. Combined 1 day work = 1/18 + 1/15 = 33/(270). Total days = 8.18 days."
+  },
+  {
+    "id": 21,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q21. A can finish a piece of work in 20 days and B in 18 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.47 days",
+      "11.47 days",
+      "8.47 days",
+      "38 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/20, B's 1 day work = 1/18. Combined 1 day work = 1/20 + 1/18 = 38/(360). Total days = 9.47 days."
+  },
+  {
+    "id": 22,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q22. A can finish a piece of work in 22 days and B in 21 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.74 days",
+      "12.74 days",
+      "9.74 days",
+      "43 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/22, B's 1 day work = 1/21. Combined 1 day work = 1/22 + 1/21 = 43/(462). Total days = 10.74 days."
+  },
+  {
+    "id": 23,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q23. A can finish a piece of work in 24 days and B in 24 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "12.0 days",
+      "14.0 days",
+      "11.0 days",
+      "48 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/24, B's 1 day work = 1/24. Combined 1 day work = 1/24 + 1/24 = 48/(576). Total days = 12.0 days."
+  },
+  {
+    "id": 24,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q24. A can finish a piece of work in 10 days and B in 27 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "7.3 days",
+      "9.3 days",
+      "6.3 days",
+      "37 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/27. Combined 1 day work = 1/10 + 1/27 = 37/(270). Total days = 7.3 days."
+  },
+  {
+    "id": 25,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q25. A can finish a piece of work in 12 days and B in 30 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.57 days",
+      "10.57 days",
+      "7.57 days",
+      "42 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/30. Combined 1 day work = 1/12 + 1/30 = 42/(360). Total days = 8.57 days."
+  },
+  {
+    "id": 26,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q26. A can finish a piece of work in 14 days and B in 33 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.83 days",
+      "11.83 days",
+      "8.83 days",
+      "47 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/14, B's 1 day work = 1/33. Combined 1 day work = 1/14 + 1/33 = 47/(462). Total days = 9.83 days."
+  },
+  {
+    "id": 27,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q27. A can finish a piece of work in 16 days and B in 36 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "11.08 days",
+      "13.08 days",
+      "10.08 days",
+      "52 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/16, B's 1 day work = 1/36. Combined 1 day work = 1/16 + 1/36 = 52/(576). Total days = 11.08 days."
+  },
+  {
+    "id": 28,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q28. A can finish a piece of work in 18 days and B in 39 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "12.32 days",
+      "14.32 days",
+      "11.32 days",
+      "57 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/18, B's 1 day work = 1/39. Combined 1 day work = 1/18 + 1/39 = 57/(702). Total days = 12.32 days."
+  },
+  {
+    "id": 29,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q29. A can finish a piece of work in 20 days and B in 42 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "13.55 days",
+      "15.55 days",
+      "12.55 days",
+      "62 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/20, B's 1 day work = 1/42. Combined 1 day work = 1/20 + 1/42 = 62/(840). Total days = 13.55 days."
+  },
+  {
+    "id": 30,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "medium",
+    "questionText": "Q30. A can finish a piece of work in 22 days and B in 15 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.92 days",
+      "10.92 days",
+      "7.92 days",
+      "37 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/22, B's 1 day work = 1/15. Combined 1 day work = 1/22 + 1/15 = 37/(330). Total days = 8.92 days."
+  },
+  {
+    "id": 31,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q31. A can finish a piece of work in 24 days and B in 18 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.29 days",
+      "12.29 days",
+      "9.29 days",
+      "42 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/24, B's 1 day work = 1/18. Combined 1 day work = 1/24 + 1/18 = 42/(432). Total days = 10.29 days."
+  },
+  {
+    "id": 32,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q32. A can finish a piece of work in 10 days and B in 21 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "6.77 days",
+      "8.77 days",
+      "5.77 days",
+      "31 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/21. Combined 1 day work = 1/10 + 1/21 = 31/(210). Total days = 6.77 days."
+  },
+  {
+    "id": 33,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q33. A can finish a piece of work in 12 days and B in 24 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "8.0 days",
+      "10.0 days",
+      "7.0 days",
+      "36 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/24. Combined 1 day work = 1/12 + 1/24 = 36/(288). Total days = 8.0 days."
+  },
+  {
+    "id": 34,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q34. A can finish a piece of work in 14 days and B in 27 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "9.22 days",
+      "11.22 days",
+      "8.22 days",
+      "41 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/14, B's 1 day work = 1/27. Combined 1 day work = 1/14 + 1/27 = 41/(378). Total days = 9.22 days."
+  },
+  {
+    "id": 35,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q35. A can finish a piece of work in 16 days and B in 30 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "10.43 days",
+      "12.43 days",
+      "9.43 days",
+      "46 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/16, B's 1 day work = 1/30. Combined 1 day work = 1/16 + 1/30 = 46/(480). Total days = 10.43 days."
+  },
+  {
+    "id": 36,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q36. A can finish a piece of work in 18 days and B in 33 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "11.65 days",
+      "13.65 days",
+      "10.65 days",
+      "51 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/18, B's 1 day work = 1/33. Combined 1 day work = 1/18 + 1/33 = 51/(594). Total days = 11.65 days."
+  },
+  {
+    "id": 37,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q37. A can finish a piece of work in 20 days and B in 36 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "12.86 days",
+      "14.86 days",
+      "11.86 days",
+      "56 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/20, B's 1 day work = 1/36. Combined 1 day work = 1/20 + 1/36 = 56/(720). Total days = 12.86 days."
+  },
+  {
+    "id": 38,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q38. A can finish a piece of work in 22 days and B in 39 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "14.07 days",
+      "16.07 days",
+      "13.07 days",
+      "61 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/22, B's 1 day work = 1/39. Combined 1 day work = 1/22 + 1/39 = 61/(858). Total days = 14.07 days."
+  },
+  {
+    "id": 39,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q39. A can finish a piece of work in 24 days and B in 42 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "15.27 days",
+      "17.27 days",
+      "14.27 days",
+      "66 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/24, B's 1 day work = 1/42. Combined 1 day work = 1/24 + 1/42 = 66/(1008). Total days = 15.27 days."
+  },
+  {
+    "id": 40,
+    "category": "Time & Work",
+    "topic": "Work Efficiency & Pipes and Cisterns",
+    "difficulty": "hard",
+    "questionText": "Q40. A can finish a piece of work in 10 days and B in 15 days. Working together, in how many days can they complete the work?",
+    "options": [
+      "6.0 days",
+      "8.0 days",
+      "5.0 days",
+      "25 days"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/15. Combined 1 day work = 1/10 + 1/15 = 25/(150). Total days = 6.0 days."
+  },
+  {
+    "id": 1,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q1. A train running at a speed of 45 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "155 m",
+      "205 m",
+      "175 m",
+      "185 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 45 * (5/18) = 12.5 m/s. Length of train = Speed * Time = 12.5 * 14 = 175 m."
+  },
+  {
+    "id": 2,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q2. A train running at a speed of 54 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "250 m",
+      "300 m",
+      "270 m",
+      "280 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 54 * (5/18) = 15.0 m/s. Length of train = Speed * Time = 15.0 * 18 = 270 m."
+  },
+  {
+    "id": 3,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q3. A train running at a speed of 63 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "365 m",
+      "415 m",
+      "385 m",
+      "395 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 63 * (5/18) = 17.5 m/s. Length of train = Speed * Time = 17.5 * 22 = 385 m."
+  },
+  {
+    "id": 4,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q4. A train running at a speed of 72 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "500 m",
+      "550 m",
+      "520 m",
+      "530 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 72 * (5/18) = 20.0 m/s. Length of train = Speed * Time = 20.0 * 26 = 520 m."
+  },
+  {
+    "id": 5,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q5. A train running at a speed of 81 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "205 m",
+      "255 m",
+      "225 m",
+      "235 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 81 * (5/18) = 22.5 m/s. Length of train = Speed * Time = 22.5 * 10 = 225 m."
+  },
+  {
+    "id": 6,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q6. A train running at a speed of 90 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "330 m",
+      "380 m",
+      "350 m",
+      "360 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 90 * (5/18) = 25.0 m/s. Length of train = Speed * Time = 25.0 * 14 = 350 m."
+  },
+  {
+    "id": 7,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q7. A train running at a speed of 99 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "475 m",
+      "525 m",
+      "495 m",
+      "505 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 99 * (5/18) = 27.5 m/s. Length of train = Speed * Time = 27.5 * 18 = 495 m."
+  },
+  {
+    "id": 8,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q8. A train running at a speed of 108 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "640 m",
+      "690 m",
+      "660 m",
+      "670 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 108 * (5/18) = 30.0 m/s. Length of train = Speed * Time = 30.0 * 22 = 660 m."
+  },
+  {
+    "id": 9,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q9. A train running at a speed of 117 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "825 m",
+      "875 m",
+      "845 m",
+      "855 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 117 * (5/18) = 32.5 m/s. Length of train = Speed * Time = 32.5 * 26 = 845 m."
+  },
+  {
+    "id": 10,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q10. A train running at a speed of 126 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "330 m",
+      "380 m",
+      "350 m",
+      "360 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 126 * (5/18) = 35.0 m/s. Length of train = Speed * Time = 35.0 * 10 = 350 m."
+  },
+  {
+    "id": 11,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q11. A train running at a speed of 135 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "505 m",
+      "555 m",
+      "525 m",
+      "535 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 135 * (5/18) = 37.5 m/s. Length of train = Speed * Time = 37.5 * 14 = 525 m."
+  },
+  {
+    "id": 12,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "easy",
+    "questionText": "Q12. A train running at a speed of 36 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "160 m",
+      "210 m",
+      "180 m",
+      "190 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 36 * (5/18) = 10.0 m/s. Length of train = Speed * Time = 10.0 * 18 = 180 m."
+  },
+  {
+    "id": 13,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q13. A train running at a speed of 45 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "255 m",
+      "305 m",
+      "275 m",
+      "285 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 45 * (5/18) = 12.5 m/s. Length of train = Speed * Time = 12.5 * 22 = 275 m."
+  },
+  {
+    "id": 14,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q14. A train running at a speed of 54 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "370 m",
+      "420 m",
+      "390 m",
+      "400 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 54 * (5/18) = 15.0 m/s. Length of train = Speed * Time = 15.0 * 26 = 390 m."
+  },
+  {
+    "id": 15,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q15. A train running at a speed of 63 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "155 m",
+      "205 m",
+      "175 m",
+      "185 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 63 * (5/18) = 17.5 m/s. Length of train = Speed * Time = 17.5 * 10 = 175 m."
+  },
+  {
+    "id": 16,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q16. A train running at a speed of 72 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "260 m",
+      "310 m",
+      "280 m",
+      "290 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 72 * (5/18) = 20.0 m/s. Length of train = Speed * Time = 20.0 * 14 = 280 m."
+  },
+  {
+    "id": 17,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q17. A train running at a speed of 81 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "385 m",
+      "435 m",
+      "405 m",
+      "415 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 81 * (5/18) = 22.5 m/s. Length of train = Speed * Time = 22.5 * 18 = 405 m."
+  },
+  {
+    "id": 18,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q18. A train running at a speed of 90 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "530 m",
+      "580 m",
+      "550 m",
+      "560 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 90 * (5/18) = 25.0 m/s. Length of train = Speed * Time = 25.0 * 22 = 550 m."
+  },
+  {
+    "id": 19,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q19. A train running at a speed of 99 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "695 m",
+      "745 m",
+      "715 m",
+      "725 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 99 * (5/18) = 27.5 m/s. Length of train = Speed * Time = 27.5 * 26 = 715 m."
+  },
+  {
+    "id": 20,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q20. A train running at a speed of 108 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "280 m",
+      "330 m",
+      "300 m",
+      "310 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 108 * (5/18) = 30.0 m/s. Length of train = Speed * Time = 30.0 * 10 = 300 m."
+  },
+  {
+    "id": 21,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q21. A train running at a speed of 117 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "435 m",
+      "485 m",
+      "455 m",
+      "465 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 117 * (5/18) = 32.5 m/s. Length of train = Speed * Time = 32.5 * 14 = 455 m."
+  },
+  {
+    "id": 22,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q22. A train running at a speed of 126 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "610 m",
+      "660 m",
+      "630 m",
+      "640 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 126 * (5/18) = 35.0 m/s. Length of train = Speed * Time = 35.0 * 18 = 630 m."
+  },
+  {
+    "id": 23,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q23. A train running at a speed of 135 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "805 m",
+      "855 m",
+      "825 m",
+      "835 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 135 * (5/18) = 37.5 m/s. Length of train = Speed * Time = 37.5 * 22 = 825 m."
+  },
+  {
+    "id": 24,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q24. A train running at a speed of 36 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "240 m",
+      "290 m",
+      "260 m",
+      "270 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 36 * (5/18) = 10.0 m/s. Length of train = Speed * Time = 10.0 * 26 = 260 m."
+  },
+  {
+    "id": 25,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q25. A train running at a speed of 45 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "105 m",
+      "155 m",
+      "125 m",
+      "135 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 45 * (5/18) = 12.5 m/s. Length of train = Speed * Time = 12.5 * 10 = 125 m."
+  },
+  {
+    "id": 26,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q26. A train running at a speed of 54 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "190 m",
+      "240 m",
+      "210 m",
+      "220 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 54 * (5/18) = 15.0 m/s. Length of train = Speed * Time = 15.0 * 14 = 210 m."
+  },
+  {
+    "id": 27,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q27. A train running at a speed of 63 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "295 m",
+      "345 m",
+      "315 m",
+      "325 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 63 * (5/18) = 17.5 m/s. Length of train = Speed * Time = 17.5 * 18 = 315 m."
+  },
+  {
+    "id": 28,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q28. A train running at a speed of 72 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "420 m",
+      "470 m",
+      "440 m",
+      "450 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 72 * (5/18) = 20.0 m/s. Length of train = Speed * Time = 20.0 * 22 = 440 m."
+  },
+  {
+    "id": 29,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q29. A train running at a speed of 81 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "565 m",
+      "615 m",
+      "585 m",
+      "595 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 81 * (5/18) = 22.5 m/s. Length of train = Speed * Time = 22.5 * 26 = 585 m."
+  },
+  {
+    "id": 30,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "medium",
+    "questionText": "Q30. A train running at a speed of 90 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "230 m",
+      "280 m",
+      "250 m",
+      "260 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 90 * (5/18) = 25.0 m/s. Length of train = Speed * Time = 25.0 * 10 = 250 m."
+  },
+  {
+    "id": 31,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q31. A train running at a speed of 99 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "365 m",
+      "415 m",
+      "385 m",
+      "395 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 99 * (5/18) = 27.5 m/s. Length of train = Speed * Time = 27.5 * 14 = 385 m."
+  },
+  {
+    "id": 32,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q32. A train running at a speed of 108 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "520 m",
+      "570 m",
+      "540 m",
+      "550 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 108 * (5/18) = 30.0 m/s. Length of train = Speed * Time = 30.0 * 18 = 540 m."
+  },
+  {
+    "id": 33,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q33. A train running at a speed of 117 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "695 m",
+      "745 m",
+      "715 m",
+      "725 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 117 * (5/18) = 32.5 m/s. Length of train = Speed * Time = 32.5 * 22 = 715 m."
+  },
+  {
+    "id": 34,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q34. A train running at a speed of 126 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "890 m",
+      "940 m",
+      "910 m",
+      "920 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 126 * (5/18) = 35.0 m/s. Length of train = Speed * Time = 35.0 * 26 = 910 m."
+  },
+  {
+    "id": 35,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q35. A train running at a speed of 135 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "355 m",
+      "405 m",
+      "375 m",
+      "385 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 135 * (5/18) = 37.5 m/s. Length of train = Speed * Time = 37.5 * 10 = 375 m."
+  },
+  {
+    "id": 36,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q36. A train running at a speed of 36 km/hr passes a pole in 14 seconds. What is the length of the train?",
+    "options": [
+      "120 m",
+      "170 m",
+      "140 m",
+      "150 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 36 * (5/18) = 10.0 m/s. Length of train = Speed * Time = 10.0 * 14 = 140 m."
+  },
+  {
+    "id": 37,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q37. A train running at a speed of 45 km/hr passes a pole in 18 seconds. What is the length of the train?",
+    "options": [
+      "205 m",
+      "255 m",
+      "225 m",
+      "235 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 45 * (5/18) = 12.5 m/s. Length of train = Speed * Time = 12.5 * 18 = 225 m."
+  },
+  {
+    "id": 38,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q38. A train running at a speed of 54 km/hr passes a pole in 22 seconds. What is the length of the train?",
+    "options": [
+      "310 m",
+      "360 m",
+      "330 m",
+      "340 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 54 * (5/18) = 15.0 m/s. Length of train = Speed * Time = 15.0 * 22 = 330 m."
+  },
+  {
+    "id": 39,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q39. A train running at a speed of 63 km/hr passes a pole in 26 seconds. What is the length of the train?",
+    "options": [
+      "435 m",
+      "485 m",
+      "455 m",
+      "465 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 63 * (5/18) = 17.5 m/s. Length of train = Speed * Time = 17.5 * 26 = 455 m."
+  },
+  {
+    "id": 40,
+    "category": "Time, Speed & Distance",
+    "topic": "Trains, Boats & Relative Speed",
+    "difficulty": "hard",
+    "questionText": "Q40. A train running at a speed of 72 km/hr passes a pole in 10 seconds. What is the length of the train?",
+    "options": [
+      "180 m",
+      "230 m",
+      "200 m",
+      "210 m"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "Speed in m/s = 72 * (5/18) = 20.0 m/s. Length of train = Speed * Time = 20.0 * 10 = 200 m."
+  },
+  {
+    "id": 1,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q1. A and B invest in a business in ratio 12000:18000. Out of a total profit of $6000, what is A's share?",
+    "options": [
+      "$2400",
+      "$2600",
+      "$3600",
+      "$2300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 12000:18000 = 2:3. A's share = (2/5) * 6000 = $2400."
+  },
+  {
+    "id": 2,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q2. A and B invest in a business in ratio 14000:21000. Out of a total profit of $7000, what is A's share?",
+    "options": [
+      "$2800",
+      "$3000",
+      "$4200",
+      "$2700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 14000:21000 = 2:3. A's share = (2/5) * 7000 = $2800."
+  },
+  {
+    "id": 3,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q3. A and B invest in a business in ratio 16000:24000. Out of a total profit of $8000, what is A's share?",
+    "options": [
+      "$3200",
+      "$3400",
+      "$4800",
+      "$3100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 16000:24000 = 2:3. A's share = (2/5) * 8000 = $3200."
+  },
+  {
+    "id": 4,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q4. A and B invest in a business in ratio 18000:27000. Out of a total profit of $9000, what is A's share?",
+    "options": [
+      "$3600",
+      "$3800",
+      "$5400",
+      "$3500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 18000:27000 = 2:3. A's share = (2/5) * 9000 = $3600."
+  },
+  {
+    "id": 5,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q5. A and B invest in a business in ratio 20000:30000. Out of a total profit of $10000, what is A's share?",
+    "options": [
+      "$4000",
+      "$4200",
+      "$6000",
+      "$3900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 20000:30000 = 2:3. A's share = (2/5) * 10000 = $4000."
+  },
+  {
+    "id": 6,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q6. A and B invest in a business in ratio 22000:33000. Out of a total profit of $11000, what is A's share?",
+    "options": [
+      "$4400",
+      "$4600",
+      "$6600",
+      "$4300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 22000:33000 = 2:3. A's share = (2/5) * 11000 = $4400."
+  },
+  {
+    "id": 7,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q7. A and B invest in a business in ratio 24000:36000. Out of a total profit of $12000, what is A's share?",
+    "options": [
+      "$4800",
+      "$5000",
+      "$7200",
+      "$4700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 24000:36000 = 2:3. A's share = (2/5) * 12000 = $4800."
+  },
+  {
+    "id": 8,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q8. A and B invest in a business in ratio 26000:39000. Out of a total profit of $13000, what is A's share?",
+    "options": [
+      "$5200",
+      "$5400",
+      "$7800",
+      "$5100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 26000:39000 = 2:3. A's share = (2/5) * 13000 = $5200."
+  },
+  {
+    "id": 9,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q9. A and B invest in a business in ratio 28000:42000. Out of a total profit of $14000, what is A's share?",
+    "options": [
+      "$5600",
+      "$5800",
+      "$8400",
+      "$5500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 28000:42000 = 2:3. A's share = (2/5) * 14000 = $5600."
+  },
+  {
+    "id": 10,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q10. A and B invest in a business in ratio 30000:45000. Out of a total profit of $15000, what is A's share?",
+    "options": [
+      "$6000",
+      "$6200",
+      "$9000",
+      "$5900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 30000:45000 = 2:3. A's share = (2/5) * 15000 = $6000."
+  },
+  {
+    "id": 11,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q11. A and B invest in a business in ratio 32000:48000. Out of a total profit of $16000, what is A's share?",
+    "options": [
+      "$6400",
+      "$6600",
+      "$9600",
+      "$6300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 32000:48000 = 2:3. A's share = (2/5) * 16000 = $6400."
+  },
+  {
+    "id": 12,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "easy",
+    "questionText": "Q12. A and B invest in a business in ratio 34000:51000. Out of a total profit of $17000, what is A's share?",
+    "options": [
+      "$6800",
+      "$7000",
+      "$10200",
+      "$6700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 34000:51000 = 2:3. A's share = (2/5) * 17000 = $6800."
+  },
+  {
+    "id": 13,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q13. A and B invest in a business in ratio 36000:54000. Out of a total profit of $18000, what is A's share?",
+    "options": [
+      "$7200",
+      "$7400",
+      "$10800",
+      "$7100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 36000:54000 = 2:3. A's share = (2/5) * 18000 = $7200."
+  },
+  {
+    "id": 14,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q14. A and B invest in a business in ratio 38000:57000. Out of a total profit of $19000, what is A's share?",
+    "options": [
+      "$7600",
+      "$7800",
+      "$11400",
+      "$7500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 38000:57000 = 2:3. A's share = (2/5) * 19000 = $7600."
+  },
+  {
+    "id": 15,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q15. A and B invest in a business in ratio 40000:60000. Out of a total profit of $20000, what is A's share?",
+    "options": [
+      "$8000",
+      "$8200",
+      "$12000",
+      "$7900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 40000:60000 = 2:3. A's share = (2/5) * 20000 = $8000."
+  },
+  {
+    "id": 16,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q16. A and B invest in a business in ratio 42000:63000. Out of a total profit of $21000, what is A's share?",
+    "options": [
+      "$8400",
+      "$8600",
+      "$12600",
+      "$8300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 42000:63000 = 2:3. A's share = (2/5) * 21000 = $8400."
+  },
+  {
+    "id": 17,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q17. A and B invest in a business in ratio 44000:66000. Out of a total profit of $22000, what is A's share?",
+    "options": [
+      "$8800",
+      "$9000",
+      "$13200",
+      "$8700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 44000:66000 = 2:3. A's share = (2/5) * 22000 = $8800."
+  },
+  {
+    "id": 18,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q18. A and B invest in a business in ratio 46000:69000. Out of a total profit of $23000, what is A's share?",
+    "options": [
+      "$9200",
+      "$9400",
+      "$13800",
+      "$9100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 46000:69000 = 2:3. A's share = (2/5) * 23000 = $9200."
+  },
+  {
+    "id": 19,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q19. A and B invest in a business in ratio 48000:72000. Out of a total profit of $24000, what is A's share?",
+    "options": [
+      "$9600",
+      "$9800",
+      "$14400",
+      "$9500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 48000:72000 = 2:3. A's share = (2/5) * 24000 = $9600."
+  },
+  {
+    "id": 20,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q20. A and B invest in a business in ratio 50000:75000. Out of a total profit of $25000, what is A's share?",
+    "options": [
+      "$10000",
+      "$10200",
+      "$15000",
+      "$9900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 50000:75000 = 2:3. A's share = (2/5) * 25000 = $10000."
+  },
+  {
+    "id": 21,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q21. A and B invest in a business in ratio 52000:78000. Out of a total profit of $26000, what is A's share?",
+    "options": [
+      "$10400",
+      "$10600",
+      "$15600",
+      "$10300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 52000:78000 = 2:3. A's share = (2/5) * 26000 = $10400."
+  },
+  {
+    "id": 22,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q22. A and B invest in a business in ratio 54000:81000. Out of a total profit of $27000, what is A's share?",
+    "options": [
+      "$10800",
+      "$11000",
+      "$16200",
+      "$10700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 54000:81000 = 2:3. A's share = (2/5) * 27000 = $10800."
+  },
+  {
+    "id": 23,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q23. A and B invest in a business in ratio 56000:84000. Out of a total profit of $28000, what is A's share?",
+    "options": [
+      "$11200",
+      "$11400",
+      "$16800",
+      "$11100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 56000:84000 = 2:3. A's share = (2/5) * 28000 = $11200."
+  },
+  {
+    "id": 24,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q24. A and B invest in a business in ratio 58000:87000. Out of a total profit of $29000, what is A's share?",
+    "options": [
+      "$11600",
+      "$11800",
+      "$17400",
+      "$11500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 58000:87000 = 2:3. A's share = (2/5) * 29000 = $11600."
+  },
+  {
+    "id": 25,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q25. A and B invest in a business in ratio 60000:90000. Out of a total profit of $30000, what is A's share?",
+    "options": [
+      "$12000",
+      "$12200",
+      "$18000",
+      "$11900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 60000:90000 = 2:3. A's share = (2/5) * 30000 = $12000."
+  },
+  {
+    "id": 26,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q26. A and B invest in a business in ratio 62000:93000. Out of a total profit of $31000, what is A's share?",
+    "options": [
+      "$12400",
+      "$12600",
+      "$18600",
+      "$12300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 62000:93000 = 2:3. A's share = (2/5) * 31000 = $12400."
+  },
+  {
+    "id": 27,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q27. A and B invest in a business in ratio 64000:96000. Out of a total profit of $32000, what is A's share?",
+    "options": [
+      "$12800",
+      "$13000",
+      "$19200",
+      "$12700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 64000:96000 = 2:3. A's share = (2/5) * 32000 = $12800."
+  },
+  {
+    "id": 28,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q28. A and B invest in a business in ratio 66000:99000. Out of a total profit of $33000, what is A's share?",
+    "options": [
+      "$13200",
+      "$13400",
+      "$19800",
+      "$13100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 66000:99000 = 2:3. A's share = (2/5) * 33000 = $13200."
+  },
+  {
+    "id": 29,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q29. A and B invest in a business in ratio 68000:102000. Out of a total profit of $34000, what is A's share?",
+    "options": [
+      "$13600",
+      "$13800",
+      "$20400",
+      "$13500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 68000:102000 = 2:3. A's share = (2/5) * 34000 = $13600."
+  },
+  {
+    "id": 30,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "medium",
+    "questionText": "Q30. A and B invest in a business in ratio 70000:105000. Out of a total profit of $35000, what is A's share?",
+    "options": [
+      "$14000",
+      "$14200",
+      "$21000",
+      "$13900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 70000:105000 = 2:3. A's share = (2/5) * 35000 = $14000."
+  },
+  {
+    "id": 31,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q31. A and B invest in a business in ratio 72000:108000. Out of a total profit of $36000, what is A's share?",
+    "options": [
+      "$14400",
+      "$14600",
+      "$21600",
+      "$14300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 72000:108000 = 2:3. A's share = (2/5) * 36000 = $14400."
+  },
+  {
+    "id": 32,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q32. A and B invest in a business in ratio 74000:111000. Out of a total profit of $37000, what is A's share?",
+    "options": [
+      "$14800",
+      "$15000",
+      "$22200",
+      "$14700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 74000:111000 = 2:3. A's share = (2/5) * 37000 = $14800."
+  },
+  {
+    "id": 33,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q33. A and B invest in a business in ratio 76000:114000. Out of a total profit of $38000, what is A's share?",
+    "options": [
+      "$15200",
+      "$15400",
+      "$22800",
+      "$15100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 76000:114000 = 2:3. A's share = (2/5) * 38000 = $15200."
+  },
+  {
+    "id": 34,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q34. A and B invest in a business in ratio 78000:117000. Out of a total profit of $39000, what is A's share?",
+    "options": [
+      "$15600",
+      "$15800",
+      "$23400",
+      "$15500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 78000:117000 = 2:3. A's share = (2/5) * 39000 = $15600."
+  },
+  {
+    "id": 35,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q35. A and B invest in a business in ratio 80000:120000. Out of a total profit of $40000, what is A's share?",
+    "options": [
+      "$16000",
+      "$16200",
+      "$24000",
+      "$15900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 80000:120000 = 2:3. A's share = (2/5) * 40000 = $16000."
+  },
+  {
+    "id": 36,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q36. A and B invest in a business in ratio 82000:123000. Out of a total profit of $41000, what is A's share?",
+    "options": [
+      "$16400",
+      "$16600",
+      "$24600",
+      "$16300"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 82000:123000 = 2:3. A's share = (2/5) * 41000 = $16400."
+  },
+  {
+    "id": 37,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q37. A and B invest in a business in ratio 84000:126000. Out of a total profit of $42000, what is A's share?",
+    "options": [
+      "$16800",
+      "$17000",
+      "$25200",
+      "$16700"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 84000:126000 = 2:3. A's share = (2/5) * 42000 = $16800."
+  },
+  {
+    "id": 38,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q38. A and B invest in a business in ratio 86000:129000. Out of a total profit of $43000, what is A's share?",
+    "options": [
+      "$17200",
+      "$17400",
+      "$25800",
+      "$17100"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 86000:129000 = 2:3. A's share = (2/5) * 43000 = $17200."
+  },
+  {
+    "id": 39,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q39. A and B invest in a business in ratio 88000:132000. Out of a total profit of $44000, what is A's share?",
+    "options": [
+      "$17600",
+      "$17800",
+      "$26400",
+      "$17500"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 88000:132000 = 2:3. A's share = (2/5) * 44000 = $17600."
+  },
+  {
+    "id": 40,
+    "category": "Ratio, Proportion & Partnership",
+    "topic": "Proportions & Business Investment",
+    "difficulty": "hard",
+    "questionText": "Q40. A and B invest in a business in ratio 90000:135000. Out of a total profit of $45000, what is A's share?",
+    "options": [
+      "$18000",
+      "$18200",
+      "$27000",
+      "$17900"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Ratio of investments A:B = 90000:135000 = 2:3. A's share = (2/5) * 45000 = $18000."
+  },
+  {
+    "id": 1,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q1. The average age of a group of 6 students is 21 years. If a teacher aged 52 years joins them, what is the new average age?",
+    "options": [
+      "26.43 years",
+      "25.43 years",
+      "24.93 years",
+      "27.43 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 21 = 126. Total age with teacher = 178. New average = 178 / 7 = 25.43 years."
+  },
+  {
+    "id": 2,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q2. The average age of a group of 7 students is 22 years. If a teacher aged 54 years joins them, what is the new average age?",
+    "options": [
+      "27.0 years",
+      "26.0 years",
+      "25.5 years",
+      "28.0 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 22 = 154. Total age with teacher = 208. New average = 208 / 8 = 26.0 years."
+  },
+  {
+    "id": 3,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q3. The average age of a group of 8 students is 23 years. If a teacher aged 56 years joins them, what is the new average age?",
+    "options": [
+      "27.67 years",
+      "26.67 years",
+      "26.17 years",
+      "28.67 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 23 = 184. Total age with teacher = 240. New average = 240 / 9 = 26.67 years."
+  },
+  {
+    "id": 4,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q4. The average age of a group of 9 students is 24 years. If a teacher aged 58 years joins them, what is the new average age?",
+    "options": [
+      "28.4 years",
+      "27.4 years",
+      "26.9 years",
+      "29.4 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 24 = 216. Total age with teacher = 274. New average = 274 / 10 = 27.4 years."
+  },
+  {
+    "id": 5,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q5. The average age of a group of 5 students is 25 years. If a teacher aged 60 years joins them, what is the new average age?",
+    "options": [
+      "31.83 years",
+      "30.83 years",
+      "30.33 years",
+      "32.83 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 25 = 125. Total age with teacher = 185. New average = 185 / 6 = 30.83 years."
+  },
+  {
+    "id": 6,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q6. The average age of a group of 6 students is 26 years. If a teacher aged 62 years joins them, what is the new average age?",
+    "options": [
+      "32.14 years",
+      "31.14 years",
+      "30.64 years",
+      "33.14 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 26 = 156. Total age with teacher = 218. New average = 218 / 7 = 31.14 years."
+  },
+  {
+    "id": 7,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q7. The average age of a group of 7 students is 27 years. If a teacher aged 64 years joins them, what is the new average age?",
+    "options": [
+      "32.620000000000005 years",
+      "31.62 years",
+      "31.12 years",
+      "33.620000000000005 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 27 = 189. Total age with teacher = 253. New average = 253 / 8 = 31.62 years."
+  },
+  {
+    "id": 8,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q8. The average age of a group of 8 students is 28 years. If a teacher aged 66 years joins them, what is the new average age?",
+    "options": [
+      "33.22 years",
+      "32.22 years",
+      "31.72 years",
+      "34.22 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 28 = 224. Total age with teacher = 290. New average = 290 / 9 = 32.22 years."
+  },
+  {
+    "id": 9,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q9. The average age of a group of 9 students is 29 years. If a teacher aged 68 years joins them, what is the new average age?",
+    "options": [
+      "33.9 years",
+      "32.9 years",
+      "32.4 years",
+      "34.9 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 29 = 261. Total age with teacher = 329. New average = 329 / 10 = 32.9 years."
+  },
+  {
+    "id": 10,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q10. The average age of a group of 5 students is 30 years. If a teacher aged 70 years joins them, what is the new average age?",
+    "options": [
+      "37.67 years",
+      "36.67 years",
+      "36.17 years",
+      "38.67 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 30 = 150. Total age with teacher = 220. New average = 220 / 6 = 36.67 years."
+  },
+  {
+    "id": 11,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q11. The average age of a group of 6 students is 31 years. If a teacher aged 72 years joins them, what is the new average age?",
+    "options": [
+      "37.86 years",
+      "36.86 years",
+      "36.36 years",
+      "38.86 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 31 = 186. Total age with teacher = 258. New average = 258 / 7 = 36.86 years."
+  },
+  {
+    "id": 12,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "easy",
+    "questionText": "Q12. The average age of a group of 7 students is 32 years. If a teacher aged 74 years joins them, what is the new average age?",
+    "options": [
+      "38.25 years",
+      "37.25 years",
+      "36.75 years",
+      "39.25 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 32 = 224. Total age with teacher = 298. New average = 298 / 8 = 37.25 years."
+  },
+  {
+    "id": 13,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q13. The average age of a group of 8 students is 33 years. If a teacher aged 76 years joins them, what is the new average age?",
+    "options": [
+      "38.78 years",
+      "37.78 years",
+      "37.28 years",
+      "39.78 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 33 = 264. Total age with teacher = 340. New average = 340 / 9 = 37.78 years."
+  },
+  {
+    "id": 14,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q14. The average age of a group of 9 students is 34 years. If a teacher aged 78 years joins them, what is the new average age?",
+    "options": [
+      "39.4 years",
+      "38.4 years",
+      "37.9 years",
+      "40.4 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 34 = 306. Total age with teacher = 384. New average = 384 / 10 = 38.4 years."
+  },
+  {
+    "id": 15,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q15. The average age of a group of 5 students is 35 years. If a teacher aged 80 years joins them, what is the new average age?",
+    "options": [
+      "43.5 years",
+      "42.5 years",
+      "42.0 years",
+      "44.5 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 35 = 175. Total age with teacher = 255. New average = 255 / 6 = 42.5 years."
+  },
+  {
+    "id": 16,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q16. The average age of a group of 6 students is 36 years. If a teacher aged 82 years joins them, what is the new average age?",
+    "options": [
+      "43.57 years",
+      "42.57 years",
+      "42.07 years",
+      "44.57 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 36 = 216. Total age with teacher = 298. New average = 298 / 7 = 42.57 years."
+  },
+  {
+    "id": 17,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q17. The average age of a group of 7 students is 37 years. If a teacher aged 84 years joins them, what is the new average age?",
+    "options": [
+      "43.88 years",
+      "42.88 years",
+      "42.38 years",
+      "44.88 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 37 = 259. Total age with teacher = 343. New average = 343 / 8 = 42.88 years."
+  },
+  {
+    "id": 18,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q18. The average age of a group of 8 students is 38 years. If a teacher aged 86 years joins them, what is the new average age?",
+    "options": [
+      "44.33 years",
+      "43.33 years",
+      "42.83 years",
+      "45.33 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 38 = 304. Total age with teacher = 390. New average = 390 / 9 = 43.33 years."
+  },
+  {
+    "id": 19,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q19. The average age of a group of 9 students is 39 years. If a teacher aged 88 years joins them, what is the new average age?",
+    "options": [
+      "44.9 years",
+      "43.9 years",
+      "43.4 years",
+      "45.9 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 39 = 351. Total age with teacher = 439. New average = 439 / 10 = 43.9 years."
+  },
+  {
+    "id": 20,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q20. The average age of a group of 5 students is 40 years. If a teacher aged 90 years joins them, what is the new average age?",
+    "options": [
+      "49.33 years",
+      "48.33 years",
+      "47.83 years",
+      "50.33 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 40 = 200. Total age with teacher = 290. New average = 290 / 6 = 48.33 years."
+  },
+  {
+    "id": 21,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q21. The average age of a group of 6 students is 41 years. If a teacher aged 92 years joins them, what is the new average age?",
+    "options": [
+      "49.29 years",
+      "48.29 years",
+      "47.79 years",
+      "50.29 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 41 = 246. Total age with teacher = 338. New average = 338 / 7 = 48.29 years."
+  },
+  {
+    "id": 22,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q22. The average age of a group of 7 students is 42 years. If a teacher aged 94 years joins them, what is the new average age?",
+    "options": [
+      "49.5 years",
+      "48.5 years",
+      "48.0 years",
+      "50.5 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 42 = 294. Total age with teacher = 388. New average = 388 / 8 = 48.5 years."
+  },
+  {
+    "id": 23,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q23. The average age of a group of 8 students is 43 years. If a teacher aged 96 years joins them, what is the new average age?",
+    "options": [
+      "49.89 years",
+      "48.89 years",
+      "48.39 years",
+      "50.89 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 43 = 344. Total age with teacher = 440. New average = 440 / 9 = 48.89 years."
+  },
+  {
+    "id": 24,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q24. The average age of a group of 9 students is 44 years. If a teacher aged 98 years joins them, what is the new average age?",
+    "options": [
+      "50.4 years",
+      "49.4 years",
+      "48.9 years",
+      "51.4 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 44 = 396. Total age with teacher = 494. New average = 494 / 10 = 49.4 years."
+  },
+  {
+    "id": 25,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q25. The average age of a group of 5 students is 45 years. If a teacher aged 100 years joins them, what is the new average age?",
+    "options": [
+      "55.17 years",
+      "54.17 years",
+      "53.67 years",
+      "56.17 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 45 = 225. Total age with teacher = 325. New average = 325 / 6 = 54.17 years."
+  },
+  {
+    "id": 26,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q26. The average age of a group of 6 students is 46 years. If a teacher aged 102 years joins them, what is the new average age?",
+    "options": [
+      "55.0 years",
+      "54.0 years",
+      "53.5 years",
+      "56.0 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 46 = 276. Total age with teacher = 378. New average = 378 / 7 = 54.0 years."
+  },
+  {
+    "id": 27,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q27. The average age of a group of 7 students is 47 years. If a teacher aged 104 years joins them, what is the new average age?",
+    "options": [
+      "55.12 years",
+      "54.12 years",
+      "53.62 years",
+      "56.12 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 47 = 329. Total age with teacher = 433. New average = 433 / 8 = 54.12 years."
+  },
+  {
+    "id": 28,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q28. The average age of a group of 8 students is 48 years. If a teacher aged 106 years joins them, what is the new average age?",
+    "options": [
+      "55.44 years",
+      "54.44 years",
+      "53.94 years",
+      "56.44 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 48 = 384. Total age with teacher = 490. New average = 490 / 9 = 54.44 years."
+  },
+  {
+    "id": 29,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q29. The average age of a group of 9 students is 49 years. If a teacher aged 108 years joins them, what is the new average age?",
+    "options": [
+      "55.9 years",
+      "54.9 years",
+      "54.4 years",
+      "56.9 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 49 = 441. Total age with teacher = 549. New average = 549 / 10 = 54.9 years."
+  },
+  {
+    "id": 30,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "medium",
+    "questionText": "Q30. The average age of a group of 5 students is 50 years. If a teacher aged 110 years joins them, what is the new average age?",
+    "options": [
+      "61.0 years",
+      "60.0 years",
+      "59.5 years",
+      "62.0 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 50 = 250. Total age with teacher = 360. New average = 360 / 6 = 60.0 years."
+  },
+  {
+    "id": 31,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q31. The average age of a group of 6 students is 51 years. If a teacher aged 112 years joins them, what is the new average age?",
+    "options": [
+      "60.71 years",
+      "59.71 years",
+      "59.21 years",
+      "61.71 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 51 = 306. Total age with teacher = 418. New average = 418 / 7 = 59.71 years."
+  },
+  {
+    "id": 32,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q32. The average age of a group of 7 students is 52 years. If a teacher aged 114 years joins them, what is the new average age?",
+    "options": [
+      "60.75 years",
+      "59.75 years",
+      "59.25 years",
+      "61.75 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 52 = 364. Total age with teacher = 478. New average = 478 / 8 = 59.75 years."
+  },
+  {
+    "id": 33,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q33. The average age of a group of 8 students is 53 years. If a teacher aged 116 years joins them, what is the new average age?",
+    "options": [
+      "61.0 years",
+      "60.0 years",
+      "59.5 years",
+      "62.0 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 53 = 424. Total age with teacher = 540. New average = 540 / 9 = 60.0 years."
+  },
+  {
+    "id": 34,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q34. The average age of a group of 9 students is 54 years. If a teacher aged 118 years joins them, what is the new average age?",
+    "options": [
+      "61.4 years",
+      "60.4 years",
+      "59.9 years",
+      "62.4 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 54 = 486. Total age with teacher = 604. New average = 604 / 10 = 60.4 years."
+  },
+  {
+    "id": 35,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q35. The average age of a group of 5 students is 55 years. If a teacher aged 120 years joins them, what is the new average age?",
+    "options": [
+      "66.83 years",
+      "65.83 years",
+      "65.33 years",
+      "67.83 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 55 = 275. Total age with teacher = 395. New average = 395 / 6 = 65.83 years."
+  },
+  {
+    "id": 36,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q36. The average age of a group of 6 students is 56 years. If a teacher aged 122 years joins them, what is the new average age?",
+    "options": [
+      "66.43 years",
+      "65.43 years",
+      "64.93 years",
+      "67.43 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 6 students = 6 * 56 = 336. Total age with teacher = 458. New average = 458 / 7 = 65.43 years."
+  },
+  {
+    "id": 37,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q37. The average age of a group of 7 students is 57 years. If a teacher aged 124 years joins them, what is the new average age?",
+    "options": [
+      "66.38 years",
+      "65.38 years",
+      "64.88 years",
+      "67.38 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 7 students = 7 * 57 = 399. Total age with teacher = 523. New average = 523 / 8 = 65.38 years."
+  },
+  {
+    "id": 38,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q38. The average age of a group of 8 students is 58 years. If a teacher aged 126 years joins them, what is the new average age?",
+    "options": [
+      "66.56 years",
+      "65.56 years",
+      "65.06 years",
+      "67.56 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 8 students = 8 * 58 = 464. Total age with teacher = 590. New average = 590 / 9 = 65.56 years."
+  },
+  {
+    "id": 39,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q39. The average age of a group of 9 students is 59 years. If a teacher aged 128 years joins them, what is the new average age?",
+    "options": [
+      "66.9 years",
+      "65.9 years",
+      "65.4 years",
+      "67.9 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 9 students = 9 * 59 = 531. Total age with teacher = 659. New average = 659 / 10 = 65.9 years."
+  },
+  {
+    "id": 40,
+    "category": "Averages & Mixtures",
+    "topic": "Averages, Weighted Mean & Alligations",
+    "difficulty": "hard",
+    "questionText": "Q40. The average age of a group of 5 students is 60 years. If a teacher aged 130 years joins them, what is the new average age?",
+    "options": [
+      "72.67 years",
+      "71.67 years",
+      "71.17 years",
+      "73.67 years"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "Sum of 5 students = 5 * 60 = 300. Total age with teacher = 430. New average = 430 / 6 = 71.67 years."
+  },
+  {
+    "id": 1,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q1. Find the difference between Compound Interest and Simple Interest on $1500 at 6% per annum for 2 years.",
+    "options": [
+      "$10",
+      "$3",
+      "$5",
+      "$15"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (1500*6*2)/100 = $180. CI = 1500 * [(1 + 6/100)^2 - 1] = $185. Difference CI - SI = $5."
+  },
+  {
+    "id": 2,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q2. Find the difference between Compound Interest and Simple Interest on $2000 at 7% per annum for 2 years.",
+    "options": [
+      "$14",
+      "$7",
+      "$9",
+      "$19"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (2000*7*2)/100 = $280. CI = 2000 * [(1 + 7/100)^2 - 1] = $289. Difference CI - SI = $9."
+  },
+  {
+    "id": 3,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q3. Find the difference between Compound Interest and Simple Interest on $2500 at 8% per annum for 2 years.",
+    "options": [
+      "$21",
+      "$14",
+      "$16",
+      "$26"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (2500*8*2)/100 = $400. CI = 2500 * [(1 + 8/100)^2 - 1] = $416. Difference CI - SI = $16."
+  },
+  {
+    "id": 4,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q4. Find the difference between Compound Interest and Simple Interest on $3000 at 9% per annum for 2 years.",
+    "options": [
+      "$29",
+      "$22",
+      "$24",
+      "$34"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (3000*9*2)/100 = $540. CI = 3000 * [(1 + 9/100)^2 - 1] = $564. Difference CI - SI = $24."
+  },
+  {
+    "id": 5,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q5. Find the difference between Compound Interest and Simple Interest on $3500 at 10% per annum for 2 years.",
+    "options": [
+      "$40",
+      "$33",
+      "$35",
+      "$45"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (3500*10*2)/100 = $700. CI = 3500 * [(1 + 10/100)^2 - 1] = $735. Difference CI - SI = $35."
+  },
+  {
+    "id": 6,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q6. Find the difference between Compound Interest and Simple Interest on $4000 at 5% per annum for 2 years.",
+    "options": [
+      "$15",
+      "$8",
+      "$10",
+      "$20"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (4000*5*2)/100 = $400. CI = 4000 * [(1 + 5/100)^2 - 1] = $410. Difference CI - SI = $10."
+  },
+  {
+    "id": 7,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q7. Find the difference between Compound Interest and Simple Interest on $4500 at 6% per annum for 2 years.",
+    "options": [
+      "$21",
+      "$14",
+      "$16",
+      "$26"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (4500*6*2)/100 = $540. CI = 4500 * [(1 + 6/100)^2 - 1] = $556. Difference CI - SI = $16."
+  },
+  {
+    "id": 8,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q8. Find the difference between Compound Interest and Simple Interest on $5000 at 7% per annum for 2 years.",
+    "options": [
+      "$29",
+      "$22",
+      "$24",
+      "$34"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (5000*7*2)/100 = $700. CI = 5000 * [(1 + 7/100)^2 - 1] = $724. Difference CI - SI = $24."
+  },
+  {
+    "id": 9,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q9. Find the difference between Compound Interest and Simple Interest on $5500 at 8% per annum for 2 years.",
+    "options": [
+      "$40",
+      "$33",
+      "$35",
+      "$45"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (5500*8*2)/100 = $880. CI = 5500 * [(1 + 8/100)^2 - 1] = $915. Difference CI - SI = $35."
+  },
+  {
+    "id": 10,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q10. Find the difference between Compound Interest and Simple Interest on $6000 at 9% per annum for 2 years.",
+    "options": [
+      "$53",
+      "$46",
+      "$48",
+      "$58"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (6000*9*2)/100 = $1080. CI = 6000 * [(1 + 9/100)^2 - 1] = $1128. Difference CI - SI = $48."
+  },
+  {
+    "id": 11,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q11. Find the difference between Compound Interest and Simple Interest on $6500 at 10% per annum for 2 years.",
+    "options": [
+      "$70",
+      "$63",
+      "$65",
+      "$75"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (6500*10*2)/100 = $1300. CI = 6500 * [(1 + 10/100)^2 - 1] = $1365. Difference CI - SI = $65."
+  },
+  {
+    "id": 12,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "easy",
+    "questionText": "Q12. Find the difference between Compound Interest and Simple Interest on $7000 at 5% per annum for 2 years.",
+    "options": [
+      "$22",
+      "$15",
+      "$17",
+      "$27"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (7000*5*2)/100 = $700. CI = 7000 * [(1 + 5/100)^2 - 1] = $717. Difference CI - SI = $17."
+  },
+  {
+    "id": 13,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q13. Find the difference between Compound Interest and Simple Interest on $7500 at 6% per annum for 2 years.",
+    "options": [
+      "$32",
+      "$25",
+      "$27",
+      "$37"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (7500*6*2)/100 = $900. CI = 7500 * [(1 + 6/100)^2 - 1] = $927. Difference CI - SI = $27."
+  },
+  {
+    "id": 14,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q14. Find the difference between Compound Interest and Simple Interest on $8000 at 7% per annum for 2 years.",
+    "options": [
+      "$44",
+      "$37",
+      "$39",
+      "$49"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (8000*7*2)/100 = $1120. CI = 8000 * [(1 + 7/100)^2 - 1] = $1159. Difference CI - SI = $39."
+  },
+  {
+    "id": 15,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q15. Find the difference between Compound Interest and Simple Interest on $8500 at 8% per annum for 2 years.",
+    "options": [
+      "$59",
+      "$52",
+      "$54",
+      "$64"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (8500*8*2)/100 = $1360. CI = 8500 * [(1 + 8/100)^2 - 1] = $1414. Difference CI - SI = $54."
+  },
+  {
+    "id": 16,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q16. Find the difference between Compound Interest and Simple Interest on $9000 at 9% per annum for 2 years.",
+    "options": [
+      "$77",
+      "$70",
+      "$72",
+      "$82"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (9000*9*2)/100 = $1620. CI = 9000 * [(1 + 9/100)^2 - 1] = $1692. Difference CI - SI = $72."
+  },
+  {
+    "id": 17,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q17. Find the difference between Compound Interest and Simple Interest on $9500 at 10% per annum for 2 years.",
+    "options": [
+      "$100",
+      "$93",
+      "$95",
+      "$105"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (9500*10*2)/100 = $1900. CI = 9500 * [(1 + 10/100)^2 - 1] = $1995. Difference CI - SI = $95."
+  },
+  {
+    "id": 18,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q18. Find the difference between Compound Interest and Simple Interest on $10000 at 5% per annum for 2 years.",
+    "options": [
+      "$30",
+      "$23",
+      "$25",
+      "$35"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (10000*5*2)/100 = $1000. CI = 10000 * [(1 + 5/100)^2 - 1] = $1025. Difference CI - SI = $25."
+  },
+  {
+    "id": 19,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q19. Find the difference between Compound Interest and Simple Interest on $10500 at 6% per annum for 2 years.",
+    "options": [
+      "$42",
+      "$35",
+      "$37",
+      "$47"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (10500*6*2)/100 = $1260. CI = 10500 * [(1 + 6/100)^2 - 1] = $1297. Difference CI - SI = $37."
+  },
+  {
+    "id": 20,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q20. Find the difference between Compound Interest and Simple Interest on $11000 at 7% per annum for 2 years.",
+    "options": [
+      "$58",
+      "$51",
+      "$53",
+      "$63"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (11000*7*2)/100 = $1540. CI = 11000 * [(1 + 7/100)^2 - 1] = $1593. Difference CI - SI = $53."
+  },
+  {
+    "id": 21,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q21. Find the difference between Compound Interest and Simple Interest on $11500 at 8% per annum for 2 years.",
+    "options": [
+      "$78",
+      "$71",
+      "$73",
+      "$83"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (11500*8*2)/100 = $1840. CI = 11500 * [(1 + 8/100)^2 - 1] = $1913. Difference CI - SI = $73."
+  },
+  {
+    "id": 22,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q22. Find the difference between Compound Interest and Simple Interest on $12000 at 9% per annum for 2 years.",
+    "options": [
+      "$102",
+      "$95",
+      "$97",
+      "$107"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (12000*9*2)/100 = $2160. CI = 12000 * [(1 + 9/100)^2 - 1] = $2257. Difference CI - SI = $97."
+  },
+  {
+    "id": 23,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q23. Find the difference between Compound Interest and Simple Interest on $12500 at 10% per annum for 2 years.",
+    "options": [
+      "$130",
+      "$123",
+      "$125",
+      "$135"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (12500*10*2)/100 = $2500. CI = 12500 * [(1 + 10/100)^2 - 1] = $2625. Difference CI - SI = $125."
+  },
+  {
+    "id": 24,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q24. Find the difference between Compound Interest and Simple Interest on $13000 at 5% per annum for 2 years.",
+    "options": [
+      "$37",
+      "$30",
+      "$32",
+      "$42"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (13000*5*2)/100 = $1300. CI = 13000 * [(1 + 5/100)^2 - 1] = $1332. Difference CI - SI = $32."
+  },
+  {
+    "id": 25,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q25. Find the difference between Compound Interest and Simple Interest on $13500 at 6% per annum for 2 years.",
+    "options": [
+      "$53",
+      "$46",
+      "$48",
+      "$58"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (13500*6*2)/100 = $1620. CI = 13500 * [(1 + 6/100)^2 - 1] = $1668. Difference CI - SI = $48."
+  },
+  {
+    "id": 26,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q26. Find the difference between Compound Interest and Simple Interest on $14000 at 7% per annum for 2 years.",
+    "options": [
+      "$73",
+      "$66",
+      "$68",
+      "$78"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (14000*7*2)/100 = $1960. CI = 14000 * [(1 + 7/100)^2 - 1] = $2028. Difference CI - SI = $68."
+  },
+  {
+    "id": 27,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q27. Find the difference between Compound Interest and Simple Interest on $14500 at 8% per annum for 2 years.",
+    "options": [
+      "$97",
+      "$90",
+      "$92",
+      "$102"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (14500*8*2)/100 = $2320. CI = 14500 * [(1 + 8/100)^2 - 1] = $2412. Difference CI - SI = $92."
+  },
+  {
+    "id": 28,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q28. Find the difference between Compound Interest and Simple Interest on $15000 at 9% per annum for 2 years.",
+    "options": [
+      "$126",
+      "$119",
+      "$121",
+      "$131"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (15000*9*2)/100 = $2700. CI = 15000 * [(1 + 9/100)^2 - 1] = $2821. Difference CI - SI = $121."
+  },
+  {
+    "id": 29,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q29. Find the difference between Compound Interest and Simple Interest on $15500 at 10% per annum for 2 years.",
+    "options": [
+      "$160",
+      "$153",
+      "$155",
+      "$165"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (15500*10*2)/100 = $3100. CI = 15500 * [(1 + 10/100)^2 - 1] = $3255. Difference CI - SI = $155."
+  },
+  {
+    "id": 30,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "medium",
+    "questionText": "Q30. Find the difference between Compound Interest and Simple Interest on $16000 at 5% per annum for 2 years.",
+    "options": [
+      "$45",
+      "$38",
+      "$40",
+      "$50"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (16000*5*2)/100 = $1600. CI = 16000 * [(1 + 5/100)^2 - 1] = $1640. Difference CI - SI = $40."
+  },
+  {
+    "id": 31,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q31. Find the difference between Compound Interest and Simple Interest on $16500 at 6% per annum for 2 years.",
+    "options": [
+      "$64",
+      "$57",
+      "$59",
+      "$69"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (16500*6*2)/100 = $1980. CI = 16500 * [(1 + 6/100)^2 - 1] = $2039. Difference CI - SI = $59."
+  },
+  {
+    "id": 32,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q32. Find the difference between Compound Interest and Simple Interest on $17000 at 7% per annum for 2 years.",
+    "options": [
+      "$88",
+      "$81",
+      "$83",
+      "$93"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (17000*7*2)/100 = $2380. CI = 17000 * [(1 + 7/100)^2 - 1] = $2463. Difference CI - SI = $83."
+  },
+  {
+    "id": 33,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q33. Find the difference between Compound Interest and Simple Interest on $17500 at 8% per annum for 2 years.",
+    "options": [
+      "$117",
+      "$110",
+      "$112",
+      "$122"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (17500*8*2)/100 = $2800. CI = 17500 * [(1 + 8/100)^2 - 1] = $2912. Difference CI - SI = $112."
+  },
+  {
+    "id": 34,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q34. Find the difference between Compound Interest and Simple Interest on $18000 at 9% per annum for 2 years.",
+    "options": [
+      "$150",
+      "$143",
+      "$145",
+      "$155"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (18000*9*2)/100 = $3240. CI = 18000 * [(1 + 9/100)^2 - 1] = $3385. Difference CI - SI = $145."
+  },
+  {
+    "id": 35,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q35. Find the difference between Compound Interest and Simple Interest on $18500 at 10% per annum for 2 years.",
+    "options": [
+      "$190",
+      "$183",
+      "$185",
+      "$195"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (18500*10*2)/100 = $3700. CI = 18500 * [(1 + 10/100)^2 - 1] = $3885. Difference CI - SI = $185."
+  },
+  {
+    "id": 36,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q36. Find the difference between Compound Interest and Simple Interest on $19000 at 5% per annum for 2 years.",
+    "options": [
+      "$52",
+      "$45",
+      "$47",
+      "$57"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (19000*5*2)/100 = $1900. CI = 19000 * [(1 + 5/100)^2 - 1] = $1947. Difference CI - SI = $47."
+  },
+  {
+    "id": 37,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q37. Find the difference between Compound Interest and Simple Interest on $19500 at 6% per annum for 2 years.",
+    "options": [
+      "$75",
+      "$68",
+      "$70",
+      "$80"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (19500*6*2)/100 = $2340. CI = 19500 * [(1 + 6/100)^2 - 1] = $2410. Difference CI - SI = $70."
+  },
+  {
+    "id": 38,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q38. Find the difference between Compound Interest and Simple Interest on $20000 at 7% per annum for 2 years.",
+    "options": [
+      "$103",
+      "$96",
+      "$98",
+      "$108"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (20000*7*2)/100 = $2800. CI = 20000 * [(1 + 7/100)^2 - 1] = $2898. Difference CI - SI = $98."
+  },
+  {
+    "id": 39,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q39. Find the difference between Compound Interest and Simple Interest on $20500 at 8% per annum for 2 years.",
+    "options": [
+      "$136",
+      "$129",
+      "$131",
+      "$141"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (20500*8*2)/100 = $3280. CI = 20500 * [(1 + 8/100)^2 - 1] = $3411. Difference CI - SI = $131."
+  },
+  {
+    "id": 40,
+    "category": "Simple & Compound Interest",
+    "topic": "Financial Math & Interest Rates",
+    "difficulty": "hard",
+    "questionText": "Q40. Find the difference between Compound Interest and Simple Interest on $21000 at 9% per annum for 2 years.",
+    "options": [
+      "$175",
+      "$168",
+      "$170",
+      "$180"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "SI = (21000*9*2)/100 = $3780. CI = 21000 * [(1 + 9/100)^2 - 1] = $3950. Difference CI - SI = $170."
+  }
+]
